@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Melburch";
+    src: url('../assets/fonts/Melburch/Melburch.otf');
+}
+@font-face {
+    font-family: "Melburch Outline";
+    src: url('../assets/fonts/Melburch/Melburch\ Outline.otf');
+}
+
+/* Global styles
+------------------------------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+ text-decoration: none;
+ color: black;
+}
+a:hover {
+    text-decoration:underline;
+}
+h1, h2, h3 {
+    font-family: "Melburch";
+    margin: 20px 0;
+}
+h1 {
+    font-size: 56px;
+    line-height: 2;
+}
+h2 {
+    font-size: 51px;
+    line-height: 2;
+}
+h3 {
+    font-size: 35px;
+    line-height: 2;
+}
+
+/* Header
+------------------------------- */
+header {
+    display: flex;
+    /* text-align: center; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.flex-item-menu {
+    flex: 6 1 100px;
+    background-color: white;
+    /* border: solid 1px black; */
+}
+.flex-item {
+    flex: 1 1 100px;
+    background-color: white;
+    /* border: solid 1px black; */
+}
+.menu {
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.flex-item.toggles {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-item.toggles p {
+    flex: 0 1 20%;
+}
+img {
+    width: 20%;
+    margin-left: 20%;
+}
+.content-wrap {
+    max-width: 850px;
+    width: 85%;
+    margin:  0 auto;
+    padding: 60px 0;
+}
+
+/* Hero
+------------------------------- */
+#hero {
+    height: 100vh;
+    text-align: center;
+}
+#hero h2 {
+    font-family: 'Melburch Outline';
+}
+.moving-text{
+    border: 1px solid black;
+}
+.icones {
+    width: 5%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.icones ul li {
+    margin-bottom: 10px;
+}
+.icones ul li a:hover {
+    color:darkgray;
+}
+
+
+/*About
+------------------------------- */
+
+/* Projects
+------------------------------- */
+
+/* Skills
+------------------------------- */
+
+/* Background
+------------------------------- */
+
+/* Contact
+------------------------------- */
