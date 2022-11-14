@@ -19,6 +19,7 @@
 3. créer une animation avec les titres principaux (apparition et coloration)
 4. Bonus: Créer un fond coloré dégradé blur (effet texturé grain de sable)
 5. Bonus++: Créer une animation avec le fond, une boule de couleur blur qui se déplace avec la souris dans le background du héro
+6: nav: css lien actif pour voir visuelement où on se trouve
 
 ### About
 
@@ -29,13 +30,20 @@
 ### Projects +++
 
 1. Créer le système de filtre des projets - comment ? JSON en script JS qui vient charger les elements de la galerie en fonction du filtre ? 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func 
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x 
 2. Voir ce qu'il faut utiliser en css pour rendre la galerie scrollablede la droite vers la gauche - flex box et quoi d'autre ?
 3. Bonus: Filtre: créer une animation sur le filtre en fonction du filtre hover/cliqué (la barre grossis avec un point par exemple)
-4. Créer la fenetre modale - voir comment faire charger dans la modale les informations selon le projet cliqué (JSON et Javascript probablement)
+4. Créer la fenetre modale - voir comment faire charger dans la modale les informations selon le projet cliqué (JSON et Javascript probablement): 
+https://getbootstrap.com/docs/5.2/components/modal/#how-it-works
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 
 ### Skills
 
-1. Scatter or Bubble plot: trouver une librairie JS avec ce graph (responsive avec options cliquables)
+1. Scatter or Bubble plot: trouver une librairie JS avec ce graph (responsive avec options cliquables):
+https://www.chartjs.org/docs/latest/samples/other-charts/bubble.html 
+https://www.chartjs.org/docs/latest/charts/bubble.html
+https://www.chartjs.org/docs/latest/charts/polar.html 
 2. Réflechir aux poids/ aux légendes du graphiques : comment intégrer les compétences
 3. Bonus: rendre les compétences cliquables
 4. Mobile: Voir si il faut un autre type de graph (exemple graph barre pour les compétences)
