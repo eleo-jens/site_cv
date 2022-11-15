@@ -15,50 +15,62 @@ html {
     box-sizing: border-box;
     color: #202020;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     padding: 0;
     margin: 0;
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
 }
+
 section {
     height: 100vh;
 }
+
 p {
     line-height: 1.5;
 }
+
 ul {
     list-style-type: none;
 }
+
 a {
  text-decoration: none;
  color: #202020;
 }
+
 a:hover {
     text-decoration:underline;
 }
+
 h1, h2, h3 {
     font-family: "Melburch";
     margin: 20px 0;
 }
+
 h1 {
     /* font-size: 56px; */
     font-size: 3.5rem;
     line-height: 2;
 }
+
 h2 {
     /* font-size: 51px; */
     font-size: 3.2rem;
     line-height: 2;
 }
+
 h3 {
     /* font-size: 35px; */
     font-size: 2.3rem;
     line-height: 2;
 }
+
 .content-wrap {
     max-width: 1080px;
     width: 100%;
@@ -75,28 +87,34 @@ header {
     top: 0;
     width: 100%;
 }
+
 .flex-item-menu {
     flex: 6 1 100px;
     background-color: white;
     /* border: solid 1px black; */
 }
+
 .flex-item {
     flex: 1 1 100px;
     background-color: white;
     /* border: solid 1px black; */
 }
+
 .menu {
     display:flex;
     text-align: center;
     justify-content: space-around;
 }
+
 .flex-item.toggles {
     display: flex;
     justify-content: flex-end;
 }
+
 .flex-item.toggles p {
     flex: 0 1 20%;
 }
+
 img {
     width: 20%;
     margin-left: 20%;
@@ -108,26 +126,32 @@ img {
     height: 100vh;
     text-align: center;
 }
+
 #hero h2 {
     font-family: 'Melburch Outline';
 }
+
 .moving-text{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-top: 140px;
 }
+
 .moving-text p {
     margin: 7px;
 }
+
 .icones {
     width: 5%;
     position: fixed;
     bottom: 150px;
     right: 60px;
 }
+
 .icones ul li {
     margin-bottom: 10px;
 }
+
 .icones ul li a:hover {
     color:darkgray;
 }
@@ -138,14 +162,17 @@ img {
 .wrap-about-me {
     display: flex;
 }
+
 .wrap-about-me-p {
     flex: 8;
 }
+
 .wrap-about-me-img {
     flex: 1;
     object-fit: cover;
     border-radius: 5%;
 }
+
 .women-api {
     display: flex;
     display: none;
@@ -156,6 +183,7 @@ img {
 section#projects div.flex-container{
     display: flex;
 }
+
 div#galerie{
     display: flex;
     flex: 3;
@@ -168,7 +196,6 @@ Chrome, Safari and Opera */
 /* div#galerie::-webkit-scrollbar{
     display:none;
 } */
-
 
 div#galerie::-webkit-scrollbar-track
 {
@@ -191,75 +218,105 @@ section#projects h3 {
     font-size: 1.2rem;
     text-align: center;
 }
+
 .flex-item-filter {
     flex: 2;
     padding-top: 4%;
 }
+
 .flex-item-filter ul li{
     padding-top: 3%;
 }
+
 .flex-item-filter ul li:hover{
     padding-top: 3%;
     font-weight: 700;
 }
+
 .project-item {
     flex: 1 0 32%;
     margin-right: 2%;
     cursor: pointer;
 }
+
 section#projects img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     margin: auto;
 }
+
 section#projects .image-container {
     height: 300px;
 }
 /* Modal Project Detail
 ------------------------------- */
-.modal {
-    display:none;
+.modal-container {
+    /* display: none; On va préférer visibility à display car permet de faire des transition et animation*/ 
+    visibility: hidden;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
     top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+}
+
+.modal-container.active {
+    /* display: block; */
+    visibility: visible;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, 0.4);
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+.modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
 }
 
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+.modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 900px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* pour centrer des éléments positionnés en absolu:  */
+    /* ne fonctionne pas */
+    transform: translate(-50%, calc(-50% - 10px));
+    transition: opacity 0.4 ease-out,
+    transform 0.4 ease-out;
 }
 
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
+.modal-container.active .modal {
+    opacity: 1;
+    /* ne fonctionne pas */
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4 0.2 ease-out,
+    transform 0.4 0.2 ease-out;
+}
+
+.close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-  }
-
-
-
+    background-color: #ff365e;
+    color:#fff;
+}
 /* Skills
 ------------------------------- */
 
