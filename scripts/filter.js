@@ -1,25 +1,33 @@
-// par défaut class all display
-console.log(document.querySelector(".filter"));
+const filters = document.querySelectorAll(".filter");
 
-console.log(document.querySelector(".filter").id);
-
-document.querySelectorAll(".filter").forEach(function (elem) {
+filters.forEach(function (elem) {
   elem.addEventListener("click", (event) => {
+    console.log(event);
     console.log(elem.id);
-    filter(elem.id);
+    selectProjects(elem.id);
+    toggleBold(elem, filters);
   });
 });
 
-let filter = function (category) {
-    console.log(`J'ai cliqué sur ${category}`);
-    // all: display none;
-    let toHide = document.getElementsByClassName("all");
-    for (let i = 0; i < toHide.length; i++) {
-      toHide[i].style.display = "none";
+let selectProjects = function (category) {
+  console.log(`J'ai cliqué sur ${category}`);
+  // all: display none;
+  let toHide = document.getElementsByClassName("all");
+  for (let i = 0; i < toHide.length; i++) {
+    toHide[i].style.display = "none";
+  }
+  // category: display
+  let toShow = document.getElementsByClassName(category);
+  for (let i = 0; i < toShow.length; i++) {
+    toShow[i].style.display = "block";
+  }
+};
+
+let toggleBold = function (elem, filters) {
+  elem.classList.toggle("active");
+  filters.forEach(function (filter) {
+    if (filter.id != elem.id) {
+        filter.classList.remove("active");
     }
-    // category: display
-    let toShow = document.getElementsByClassName(category);
-    for (let i = 0; i < toShow.length; i++) {
-      toShow[i].style.display = "block";
-    }
+  });
 };

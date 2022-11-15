@@ -131,10 +131,13 @@ img {
     font-family: 'Melburch Outline';
 }
 
-.moving-text{
+.moving-text {
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-top: 140px;
+    /* margin-top: 140px; */
 }
 
 .moving-text p {
@@ -144,8 +147,8 @@ img {
 .icones {
     width: 5%;
     position: fixed;
-    bottom: 150px;
-    right: 60px;
+    bottom: 15%;
+    right: 4%;
 }
 
 .icones ul li {
@@ -228,6 +231,10 @@ section#projects h3 {
     padding-top: 3%;
 }
 
+.flex-item-filter ul li.active {
+    font-weight: 700;
+}
+
 .flex-item-filter ul li:hover{
     padding-top: 3%;
     font-weight: 700;
@@ -303,6 +310,10 @@ section#projects .image-container {
     transform: translate(-50%, -50%);
     transition: opacity 0.4 0.2 ease-out,
     transform 0.4 0.2 ease-out;
+}
+
+div.modal h2#project-title {
+    font-size: 2rem;
 }
 
 .close-modal {

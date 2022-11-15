@@ -37,6 +37,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
 4. Créer la fenetre modale - voir comment faire charger dans la modale les informations selon le projet cliqué (JSON et Javascript probablement): 
 https://getbootstrap.com/docs/5.2/components/modal/#how-it-works
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+5. Bonus: faire le scroll sur la gallerie qui s'arrete et se scrolle horizontalement
 
 ### Skills
 
