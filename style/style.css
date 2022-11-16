@@ -70,13 +70,16 @@ h3 {
     font-size: 2.3rem;
     line-height: 2;
 }
-
 .content-wrap {
     max-width: 1080px;
     width: 100%;
     margin:  0 auto;
     padding: 60px 0;
 }
+/* .modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+} */
 
 /* Header
 ------------------------------- */
@@ -86,7 +89,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 555;
+    z-index: 10;
 }
 
 .flex-item-menu {
@@ -116,8 +119,8 @@ header {
     flex: 0 1 20%;
 }
 
-img {
-    width: 20%;
+header img {
+    max-width: 60px;
     margin-left: 20%;
 }
 
@@ -175,6 +178,8 @@ img {
     flex: 1;
     object-fit: cover;
     border-radius: 5%;
+    max-width: 180px;
+    margin-left: 10%;;
 }
 
 .women-api {
@@ -245,6 +250,7 @@ section#projects h3 {
     flex: 1 0 32%;
     margin-right: 2%;
     cursor: pointer;
+    max-width: 230px;
 }
 
 section#projects img {
@@ -300,17 +306,17 @@ section#projects .image-container {
     left: 50%;
     /* pour centrer des éléments positionnés en absolu:  */
     /* ne fonctionne pas */
-    transform: translate(-50%, calc(-50% - 10px));
-    transition: opacity 0.4 ease-out,
-    transform 0.4 ease-out;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
 }
 
 .modal-container.active .modal {
     opacity: 1;
     /* ne fonctionne pas */
     transform: translate(-50%, -50%);
-    transition: opacity 0.4 0.2 ease-out,
-    transform 0.4 0.2 ease-out;
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
 }
 
 div.modal h2#project-title {
@@ -331,7 +337,13 @@ div.modal h2#project-title {
 }
 /* Skills
 ------------------------------- */
-
+#graph-container {
+    max-width: 50%;
+    margin: auto;
+}
+/* canvas { 
+    transform: translateZ(0); 
+} */
 /* Background
 ------------------------------- */
 
