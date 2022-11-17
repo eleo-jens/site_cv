@@ -387,7 +387,9 @@ section#background {
 
 .timeline-section {
     display: flex;
+    flex: 2;
     flex-direction: row-reverse;
+    overflow-x: scroll;
 }
 
 .timeline-section.odd {
@@ -404,7 +406,9 @@ section#background {
 }
 
 .timeline-item {
-    width: 300px;
+    flex: 1 0 32%;
+    margin-left: 10%;
+    max-width: 300px;
     min-height: 200px;
     height: auto;
     padding: 20px;
