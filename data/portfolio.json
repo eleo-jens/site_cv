@@ -17,14 +17,14 @@
         {
             "id" : "1",
             "title": "CV Website",
-            "description" : "Projet hackathon",
+            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
             "tag": ["CSS/Html"],
             "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "src" : "../assets/img/css_linkedin.png",
+                    "alt" : "Picture of my CV Website project"
                 }
             ]
         }, 
@@ -37,8 +37,8 @@
             "website": "",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "src" : "../assets/img/wadflix_600.png",
+                    "alt" : "Picture of my netflix project"
                 }
             ]
         },

@@ -85,7 +85,6 @@ h3 {
 ------------------------------- */
 header {
     display: flex;
-    /* text-align: center; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,18 +95,25 @@ header {
     flex: 6 1 100px;
     background-color: white;
     /* border: solid 1px black; */
+    height: 56px;
 }
 
 .flex-item {
     flex: 1 1 100px;
     background-color: white;
     /* border: solid 1px black; */
+    align-items: center;
+    height: 56px;
 }
 
 .menu {
     display:flex;
     text-align: center;
     justify-content: space-around;
+}
+
+.menu li {
+    align-items: center;
 }
 
 .flex-item.toggles {
@@ -120,6 +126,7 @@ header {
 }
 
 header img {
+    height:56px;
     max-width: 60px;
     margin-left: 20%;
 }
@@ -144,8 +151,9 @@ header img {
     /* margin-top: 140px; */
 }
 
-.moving-text p {
+marquee {
     margin: 7px;
+    scrolldelay: 20;
 }
 
 .icones {
@@ -288,6 +296,7 @@ section#projects .image-container {
     height: 100%;
     background: #333333d3;
     transition: opacity 0.4s 0.2s ease-out;
+    z-index:12;
 }
 .modal-container.active .overlay {
     opacity: 1;
@@ -297,19 +306,20 @@ section#projects .image-container {
 .modal {
     opacity: 0;
     width: 95%;
-    max-width: 900px;
+    max-width: 1200px;
     min-width: 300px;
-    padding: 30px;
+    padding: 50px;
     background: #fff;
     border-radius: 5px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     /* pour centrer des éléments positionnés en absolu:  */
     /* ne fonctionne pas */
     transform: translate(-50%, calc(-50% - 50px));
     transition: opacity 0.4s ease-out,
     transform 0.4s ease-out;
+    z-index: 14;
 }
 
 .modal-container.active .modal {
@@ -344,7 +354,14 @@ div.modal h2#project-title {
 }
 img#media {
     flex: 1;
-    max-width: 350px;
+    max-width: 600px;
+    margin-left: 3%;
+}
+#tag {
+    display: flex;
+}
+#tag p {
+    margin-right: 2%;
 }
 
 /* Skills
@@ -356,6 +373,68 @@ img#media {
 
 /* Background
 ------------------------------- */
-
+section#background {
+    height: auto;
+}
 /* Contact
 ------------------------------- */
+a.rotate {
+    display: block;
+}
+
+a.rotate img {
+    width: 20%;
+    animation: rotate 25s linear infinite;
+    transform-origin: center;
+    border:#ff365e 1px solid;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+a.rotate:hover{
+    transform: scale(0.8);
+}
+
+
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}

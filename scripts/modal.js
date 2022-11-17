@@ -36,17 +36,26 @@ function fillContent(data, id){
 
       h2.innerText = data.projects[id].title;
       description.innerText = data.projects[id].description;
-      tag.innerText = data.projects[id].tag[0];
       github.setAttribute("href", data.projects[id].github);
-      if (data.projects[id].website !== ""){
+      media.setAttribute("src", data.projects[id].media[0].src);
+      media.setAttribute("alt", data.projects[id].media[0].alt);
+
+      let length = data.projects[id].tag.length;
+      tag.innerHTML = "";
+      if (length > 0){
+        for (let i = 0; i < length; i++) {
+          let p = document.createElement("p");
+          p.innerHTML = data.projects[id].tag[i];
+          tag.appendChild(p);
+        }
+      }
+
+      if (data.projects[id].website){
         website.setAttribute("href", data.projects[id].website);
       }
       else {
         website.style.display = "none";
       }
-      console.log(data.projects[id].media["src"]);
-      media.setAttribute("src", data.projects[id].media[0].src);
-      media.setAttribute("alt", data.projects[id].media[0].alt);
     }
   } catch (error) {
     console.log(error + ": Not corresponding project id");
