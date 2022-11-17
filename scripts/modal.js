@@ -50,8 +50,9 @@ function fillContent(data, id){
         }
       }
 
-      if (data.projects[id].website){
+      if (data.projects[id].website != ""){
         website.setAttribute("href", data.projects[id].website);
+        website.setAttribute("target", "_blank");
       }
       else {
         website.style.display = "none";
