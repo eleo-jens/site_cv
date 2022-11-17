@@ -263,6 +263,7 @@ section#projects img {
 section#projects .image-container {
     height: 300px;
 }
+
 /* Modal Project Detail
 ------------------------------- */
 .modal-container {
@@ -335,15 +336,24 @@ div.modal h2#project-title {
     background-color: #ff365e;
     color:#fff;
 }
+.modal-content {
+    display:flex;
+}
+.description-container{
+    flex: 1;
+}
+img#media {
+    flex: 1;
+    max-width: 350px;
+}
+
 /* Skills
 ------------------------------- */
 #graph-container {
     max-width: 50%;
     margin: auto;
 }
-/* canvas { 
-    transform: translateZ(0); 
-} */
+
 /* Background
 ------------------------------- */
 

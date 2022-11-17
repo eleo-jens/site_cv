@@ -1,9 +1,10 @@
 {
     "projects": [
         {
+            "id" : "0",
             "title": "Suits You",
             "description" : "A hackthon project coded in 3 days in a group of 4 developers: an IT career orientation test.",
-            "tag": ["js", "css"],
+            "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/suitsyou_hackathon",
             "website": "http://groupe7.juliette-hackathon.interface3.be",
             "media": [
@@ -14,9 +15,10 @@
             ]
         },
         {
+            "id" : "1",
             "title": "CV Website",
             "description" : "Projet hackathon",
-            "tag": ["css"],
+            "tag": ["CSS/Html"],
             "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
@@ -27,11 +29,12 @@
             ]
         }, 
         {
+            "id" : "2",
             "title": "Wadflix",
             "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests.",
-            "tag": ["php", "sql", "js"],
+            "tag": ["PHP", "SQL", "JavaScript"],
             "github": "https://github.com/eleo-jens/suitsyou_hackathon",
-            "website": "http://groupe7.juliette-hackathon.interface3.be",
+            "website": "",
             "media": [
                 { 
                     "src" : "../assets/img/suitsyou_big.png",
@@ -40,9 +43,10 @@
             ]
         },
         {
+            "id" : "3",
             "title": "Angular Introduction",
             "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
-            "tag": ["ag", "js"],
+            "tag": ["Angular", "JavaScript"],
             "github": "https://github.com/eleo-jens/angular",
             "website": "",
             "media": [

@@ -108,18 +108,20 @@
       <div class="modal">
         <button class="close-modal modal-trigger">X</button>
         <h2 id="project-title">Project Title</h2>
-        <div>
-          <p id="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-            porro ipsam reprehenderit non hic vero nihil, aspernatur voluptatum
-            voluptatem. Quaerat deserunt itaque qui dolorem reiciendis!
-            Temporibus quas ab at a!
-          </p>
-          <span id="tag"></span>
-          <span id="github"></span>
-          <span id="website"></span>
+        <div class="modal-content">
+          <div class="description-container">
+            <p id="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              porro ipsam reprehenderit non hic vero nihil, aspernatur voluptatum
+              voluptatem. Quaerat deserunt itaque qui dolorem reiciendis!
+              Temporibus quas ab at a!
+            </p>
+            <span id="tag"></span>
+            <a id="github" target="_blank">Github</a>
+            <a id="website" tagret="_blank">Website</a>
+          </div>
+          <img id="media">
         </div>
-        <img id="media">
       </div>
     </div>
     <section id="projects">
@@ -139,31 +141,31 @@
           </nav>
           <!-- Comment maintenir le style (flex-item si un seul items après le filtre) -->
           <div id="galerie">
-            <div class="project-item modal-trigger css js all">
+            <div class="project-item modal-trigger css js all" id="0">
               <h3>Suits You</h3>
               <div class="image-container">
                 <img src="./assets/img/suitsyou_long.png" alt="" />
               </div>
             </div>
-            <div class="project-item modal-trigger css all">
+            <div class="project-item modal-trigger css all" id="1">
               <h3>CV Website</h3>
               <div class="image-container">
                 <img src="./assets/img/css_linkedin_long.png" alt="" />
               </div>
             </div>
-            <div class="project-item modal-trigger php css sql all">
+            <div class="project-item modal-trigger php css sql all" id="2">
               <h3>Wadflix</h3>
               <div class="image-container">
                 <img src="./assets/img/wadflix_600.png" alt="" />
               </div>
             </div>
-            <div class="project-item modal-trigger all">
+            <div class="project-item modal-trigger all" id="3">
               <h3>Project 4</h3>
               <div class="image-container">
                 <img src="./assets/img/thumbnail-2.jpg" alt="" />
               </div>
             </div>
-            <div class="project-item modal-trigger all">
+            <div class="project-item modal-trigger all" id="4">
               <h3>Project 5</h3>
               <div class="image-container">
                 <img src="./assets/img/thumbnail-1.jpg" alt="" />
