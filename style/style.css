@@ -168,6 +168,10 @@ marquee {
     margin-bottom: 10px;
 }
 
+.icones ul li a {
+    transition: color 2s ease-out;
+}
+
 .icones ul li a:hover {
     color:darkgray;
 }
@@ -368,6 +372,7 @@ div.modal h2#project-title {
 }
 .description-container{
     flex: 1;
+    position: relative;
 }
 img#media {
     flex: 1;
@@ -379,6 +384,17 @@ img#media {
 }
 #tag p {
     margin-right: 2%;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.button-wrap {
+    position: absolute;
+    bottom: 20px;
+}
+.button-52:nth-child(2) {
+    margin-left: 20px;
 }
 
 /* Skills
@@ -393,49 +409,81 @@ img#media {
 .box-timeline {
     display: flex;
     flex-direction: row-reverse;
-    height: 550px;
+    height: 600px;
     overflow-x: scroll;
     width: auto;
     align-items: flex-start;
 }
 
+.box-timeline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border: 2px solid #343434;
+    width: 1080px;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
 .timeline-item {
-    flex: 1 0 20%;
-    margin-left: 5%;
+    flex: 1 0 25%;
+    /* margin-left: 5%; */
     text-align: center;
+    position: relative;
+    min-height: 250px;
 }
 
 .timeline-item:nth-child(2n) {
     align-self: flex-end;
-    margin-bottom: 2%;;
-}
-
-.ligne {
-    width: 1000px;
-    height: 4px;
-    background-color: #343434;
+    margin-bottom: 2%;
+    position: relative;
 }
 
 .timeline-item h3 {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 1em;
+    margin-top: 0;
 }
 
-.timeline-item a img{
-    max-height: 50px;
+.timeline-item a {
+    display: flex;
 }
 
-.timeline-item a:hover{
+.timeline-item a img {
+    max-height: 60px;
+    flex: 1;
+    /* height: 10%; */
+}
+
+.timeline-item a:hover {
     text-decoration: none;
 }
 
-.rond {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
+.item-description {
+    flex: 2;
+}
+
+.timeline-card-svg path{
+    fill: #343434;
+}
+
+.timeline-card-svg:nth-of-type(odd),
+.timeline-card-svg:nth-of-type(even) {
     position: absolute;
+    width: 13px;
+    height: 49px;
+    left: 50%;
+    bottom: -63px;
+    transform: translate(-50%);
+}
+
+.timeline-item:nth-of-type(even) .timeline-card-svg {
+    top: -30px;
+    margin-top: -70px;
+    transform: scaleY(-1) translate(-50%);
 }
 
 /* Contact
