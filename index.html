@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eléonore Stultjens's CV</title>
   <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/burger.css" />
   <script src="https://kit.fontawesome.com/5bb1968648.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,12 +22,19 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#background">Background</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>
+        <!-- <div class="flex-item toggles"> -->
+        <div class="toggles">
+          <p class="language">FR</p>
+          <p class="theme"><i class="fa-regular fa-moon"></i></p>
+        </div>
     </nav>
-    <div class="flex-item toggles">
-      <p class="language">FR</p>
-      <p class="theme"><i class="fa-regular fa-moon"></i></p>
-    </div>
+
+    <button class="nav-toggler" type="button" aria-label="toggle curtain navigation">
+      <span class="line l1"></span>
+      <span class="line l2"></span>
+      <span class="line l3"></span>
+    </button>
+
   </header>
   <main>
     <!-- HERO SECTION -->
@@ -377,6 +385,8 @@
     </section>
   </main>
 
+  <script type="text/JavaScript" src="./scripts/background.js"></script>
+  <script type="text/JavaScript" src="./scripts/burger.js"></script>
   <script type="text/JavaScript" src="./scripts/modal.js"></script>
   <script type="text/JavaScript" src="./scripts/filter.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"

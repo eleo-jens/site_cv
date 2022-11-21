@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+
+    .nav-toggler {
+        position: fixed;
+        z-index: 20;
+        top: 30px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+
+    .line {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #343434;
+        transition: transform 0.3s ease-out,
+            opacity 0.1s ease-out;
+    }
+
+    .l1 {
+        transform: translateY(-10px);
+    }
+
+    .l3 {
+        transform: translateY(+10px);
+    }
+
+    .nav-toggler.active .l1 {
+        transform: translateY(0px) rotate(135deg);
+    }
+
+    .nav-toggler.active .l2 {
+        opacity: 0;
+    }
+
+    .nav-toggler.active .l3 {
+        transform: translateY(0px) rotate(-135deg);
+    }
+
+    nav {
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        transform: translateX(-100%);
+        transform: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    }
+
+    div.toggles {
+        margin-top: 50%;
+        /* margin-left: 24%; */
+        /* justify-content: space-between; */
+        /* align-self: flex-end; */
+        /* justify-items: flex-end; */
+    }
+
+    div.toggles p {
+        margin-right: 10%;
+    }
+
+    nav ul.menu {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .menu li {
+        margin-block: 40px;
+    }
+
+    nav.active {
+        transform: translateY(0);
+        height: 100%;
+    }
+
+    .menu li a {
+        font-family: 'Melburch';
+        font-size: larger;
+    }
+}
