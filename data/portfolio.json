@@ -33,7 +33,7 @@
             "title": "Wadflix",
             "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests.",
             "tag": ["PHP", "SQL", "JavaScript"],
-            "github": "https://github.com/eleo-jens/suitsyou_hackathon",
+            "github": "https://github.com/eleo-jens/siteFilmDB",
             "website": "",
             "media": [
                 { 

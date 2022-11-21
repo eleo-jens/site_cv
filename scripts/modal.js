@@ -33,6 +33,7 @@ function fillContent(data, id){
       let github = document.getElementById("github");
       let website = document.getElementById("website");
       let media = document.getElementById("media");
+      let media_url = document.getElementById("media-url");
 
       h2.innerText = data.projects[id].title;
       description.innerText = data.projects[id].description;
@@ -53,9 +54,12 @@ function fillContent(data, id){
       if (data.projects[id].website != ""){
         website.setAttribute("href", data.projects[id].website);
         website.setAttribute("target", "_blank");
+        media_url.setAttribute("href", data.projects[id].website);
+
       }
       else {
         website.style.display = "none";
+        media_url.setAttribute("href", data.projects[id].github);
       }
     }
   } catch (error) {

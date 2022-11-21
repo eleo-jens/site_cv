@@ -134,6 +134,10 @@ header {
     flex: 0 1 20%;
 }
 
+.nav-toggler {
+    /* visibility: hidden; */
+}
+
 /* .flex-item.toggles {
     display: flex;
     justify-content: flex-end;
@@ -567,6 +571,10 @@ img#media {
     text-align: center;
 }
 
+.contact-wrap:nth-child(2) p {
+    margin-bottom: 40px;
+}
+
 .contact-wrap a {
     /* text-align: center; */
     /* display: block; */
@@ -575,7 +583,7 @@ img#media {
 
 a.rotate img {
     display: block;
-    width: 15%;
+    width: 140px;
     animation: rotate 25s linear infinite;
     transform-origin: center;
     margin: auto;
@@ -592,11 +600,15 @@ a.rotate img {
     }
 }
 
-/* a.rotate:hover{
-    transform: scale(0.8);
-} */
+a.rotate:hover img {
+    opacity: 0.8;
+} 
 
-
+div.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* CSS */
 .button-52 {
@@ -873,8 +885,6 @@ a.rotate img {
     .timeline-card-svg {
         display: none;
     }
-}
-
 }
 
 @media screen and (min-width:577px) and (max-width: 768px) {}
