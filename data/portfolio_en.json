@@ -1,11 +1,12 @@
 {
     "projects": [
         {
-            "project-title": "Suits You",
+            "id" : "0",
+            "title": "Suits You",
             "description" : "A hackthon project coded in 3 days in a group of 4 developers: an IT career orientation test.",
-            "tag": ["js", "css"],
+            "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/suitsyou_hackathon",
-            "website": "http://groupe7.juliette-hackathon.interface3.be",
+            "website": "https://hackathon22.interface3.be/Su_ITs_You/",
             "media": [
                 { 
                     "src" : "../assets/img/suitsyou_big.png",
@@ -14,35 +15,38 @@
             ]
         },
         {
-            "project-title": "CV Website",
-            "description" : "Projet hackathon",
-            "tag": ["css"],
+            "id" : "1",
+            "title": "CV Website",
+            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
+            "tag": ["CSS/Html"],
             "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "src" : "../assets/img/css_linkedin.png",
+                    "alt" : "Picture of my CV Website project"
                 }
             ]
         }, 
         {
-            "project-title": "Wadflix",
+            "id" : "2",
+            "title": "Wadflix",
             "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests.",
-            "tag": ["php", "sql", "js"],
-            "github": "https://github.com/eleo-jens/suitsyou_hackathon",
-            "website": "http://groupe7.juliette-hackathon.interface3.be",
+            "tag": ["PHP", "SQL", "JavaScript"],
+            "github": "https://github.com/eleo-jens/siteFilmDB",
+            "website": "",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "src" : "../assets/img/wadflix_600.png",
+                    "alt" : "Picture of my netflix project"
                 }
             ]
         },
         {
-            "project-title": "Angular Introduction",
+            "id" : "3",
+            "title": "Angular Introduction",
             "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
-            "tag": ["ag", "js"],
+            "tag": ["Angular", "JavaScript"],
             "github": "https://github.com/eleo-jens/angular",
             "website": "",
             "media": [

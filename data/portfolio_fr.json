@@ -3,56 +3,56 @@
         {
             "id" : "0",
             "title": "Suits You",
-            "description" : "A hackthon project coded in 3 days in a group of 4 developers: an IT career orientation test.",
+            "description" : "Un projet de groupe développée lors d'un hackthon de 3 jours par 4 développeuses: un test d'orientation de carrières IT codé en JavaScript",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/suitsyou_hackathon",
-            "website": "http://groupe7.juliette-hackathon.interface3.be",
+            "website": "https://hackathon22.interface3.be/Su_ITs_You/",
             "media": [
                 { 
                     "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "alt" : "Photo de mon projet hackathon"
                 }
             ]
         },
         {
             "id" : "1",
-            "title": "CV Website",
-            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
+            "title": "Site CV",
+            "description" : "Projet de Site CV issue de la formation Linkeding Learning 'CSS Essential Training' dispensé par Christina Truong",
             "tag": ["CSS/Html"],
             "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
                     "src" : "../assets/img/css_linkedin.png",
-                    "alt" : "Picture of my CV Website project"
+                    "alt" : "Photo de mon projet site CV"
                 }
             ]
         }, 
         {
             "id" : "2",
             "title": "Wadflix",
-            "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests.",
+            "description" : "Une application web sur le thème du cinéma, codée pour un projet scolaire en PHP. Incluant les concepts suivants : MasterPage, AJAX, Session, Requêtes de base de données.",
             "tag": ["PHP", "SQL", "JavaScript"],
             "github": "https://github.com/eleo-jens/siteFilmDB",
             "website": "",
             "media": [
                 { 
                     "src" : "../assets/img/wadflix_600.png",
-                    "alt" : "Picture of my netflix project"
+                    "alt" : "Photo de mon projet Wadflix"
                 }
             ]
         },
         {
             "id" : "3",
-            "title": "Angular Introduction",
-            "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
+            "title": "Introduction à Angular",
+            "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
             "tag": ["Angular", "JavaScript"],
             "github": "https://github.com/eleo-jens/angular",
             "website": "",
             "media": [
                 { 
                     "src" : "../assets/img/suitsyou_big.png",
-                    "alt" : "Picture of my hackathon projects"
+                    "alt" : "Photo de mes démonstrations Angular"
                 }
             ]
         }  

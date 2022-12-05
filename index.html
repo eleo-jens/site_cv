@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/burger.css" />
   <script src="https://kit.fontawesome.com/5bb1968648.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+    integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/JavaScript" src="./scripts/burger.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/modal.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/filter.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/language.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/theme.js" defer></script>
+  <script type="module" src="./scripts/skills.js" defer></script>
 </head>
 
 <body>
@@ -23,10 +34,11 @@
         <li><a href="#background">Background</a></li>
         <li><a href="#contact">Contact</a></li>
         <!-- <div class="flex-item toggles"> -->
-        <div class="toggles">
-          <p class="language">FR</p>
-          <p class="theme"><i class="fa-regular fa-moon"></i></p>
-        </div>
+        <!-- <div class="toggles"> -->
+          <li><p class="language toggles">FR</p></li>
+          <li><p class="theme toggles"><i class="fa-solid fa-moon"></i></p></li>
+        <!-- </div> -->
+      </ul>
     </nav>
 
     <button class="nav-toggler" type="button" aria-label="toggle curtain navigation">
@@ -47,14 +59,17 @@
       <div class="icones">
         <ul>
           <li>
-            <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-lg"></i></a>
+            <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
-                class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                class="fa-brands fa-linkedin-in fa-xl"></i></a>
           </li>
           <li>
-            <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down fa-xl"></i></a>
           </li>
         </ul>
       </div>
@@ -116,14 +131,10 @@
       <div class="overlay modal-trigger"></div>
       <div class="modal">
         <button class="close-modal modal-trigger">X</button>
-        <h2 id="project-title">Project Title</h2>
+        <h2 id="project-title"></h2>
         <div class="modal-content">
           <div class="description-container">
             <p id="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-              porro ipsam reprehenderit non hic vero nihil, aspernatur
-              voluptatum voluptatem. Quaerat deserunt itaque qui dolorem
-              reiciendis! Temporibus quas ab at a!
             </p>
             <div id="tag"></div>
             <div class="button-wrap">
@@ -370,6 +381,7 @@
       </div>
     </section>
 
+    <!-- Transformer en footer qui apparait en caché lors du scroll à la fin -->
     <!-- CONTACT SECTION -->
     <section id="contact">
       <div class="content-wrap">
@@ -388,16 +400,6 @@
       </div>
     </section>
   </main>
-
-  <script type="text/JavaScript" src="./scripts/burger.js"></script>
-  <script type="text/JavaScript" src="./scripts/modal.js"></script>
-  <script type="text/JavaScript" src="./scripts/filter.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
-    integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" src="./scripts/skills.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,11 @@
+button.nav-toggler {
+    opacity: 0;
+}
+
 @media screen and (max-width: 768px) {
 
-    .nav-toggler {
+
+    button.nav-toggler {
         position: fixed;
         z-index: 20;
         top: 30px;
@@ -14,6 +19,7 @@
         justify-content: center;
         align-items: center;
         background: transparent;
+        opacity: 1;
     }
 
     .line {

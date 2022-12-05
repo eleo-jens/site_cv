@@ -1,5 +1,6 @@
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
+let language = document.querySelector(".language").innerText;
 
 let projectItems = document.querySelectorAll(".project-item");
 let id; 
@@ -13,14 +14,30 @@ modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
 
 function toggleModal() {
   modalContainer.classList.toggle("active");
+  const url = get_language_json();
   if (modalContainer.classList.contains("active")){
-    fetch('../data/portfolio.json')
+    fetch(url)
       .then((response) => response.json())
       .then((jsonData) => {
         console.log(jsonData);
         fillContent(jsonData, id);
       });
   }
+}
+
+function get_language_json() {
+  let url = ""; 
+  switch (language) {
+    // If the value is FR, it means the content is for now in english
+    case "FR":
+      url = '../data/portfolio_en.json';
+      break;
+      // If the value is EN, it means the content is for now in french
+    case "EN":
+      url = '../data/portfolio_fr.json';
+        break;
+  }
+  return url;
 }
 
 function fillContent(data, id){

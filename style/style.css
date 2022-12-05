@@ -22,11 +22,11 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -116,7 +116,8 @@ header {
 
 .menu {
     display: flex;
-    text-align: center;
+    height: 55.99px;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -125,14 +126,12 @@ header {
 }
 
 .toggles {
-    display: flex;
-    justify-content: flex-end;
-    width: 10%;
+    padding-left: 3rem;
 }
 
-.toggles p {
+/* .toggles p {
     flex: 0 1 20%;
-}
+} */
 
 .nav-toggler {
     /* visibility: hidden; */

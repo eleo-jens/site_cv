@@ -1,0 +1,143 @@
+{
+    "head": {
+        "title": "CV d'Eléonore Stultjens"
+    },
+    "menu": {
+        "about": "A props",
+        "projects": "Projets",
+        "skills": "Compétences",
+        "background": "Parcours",
+        "contact": "Contact"
+    },
+    "hero": {
+        "h1": "Eléonore Stultjens",
+        "h2": "Développeuse Web Junior",
+        "h3": "Bilingue FR | EN",
+        "marquee": "Actuellement à la recherche d'un stage de 8 semaines de Web Development d'avril 2023 à juillet 2023."
+    },
+    "about": {
+        "h2": "A Propos",
+        "p": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium eum voluptatibus corporis blanditiis sequi dicta sed asperiores odit quidem quos est in quas id explicabo fugiat illumperspiciatis expedita officiis, ratione ut? Suscipit consequunturnam illum tenetur, vero rem repellendus, voluptates laudantiumlaboriosam cum, corrupti labore officiis ea praesentium. Suscipiconsequuntur nam illum tenetur, vero rem repellendus, voluptateslaudantium laboriosam cum, corrupti labore officiis eapraesentium.",
+        "img": "Photo de profil"
+    },
+    "projects": {
+        "h2": "Projets",
+        "all": "Tout",
+        "galerie": [
+            {
+                "h3": "SuITs You"
+            },
+            {
+                "h3": "Site CV"
+            },
+            {
+                "h3": "WadFlix"
+            },
+            {
+                "h3": "Démo Angular"
+            },
+            {
+                "h3": "Projet 5"
+            }
+        ]
+    },
+    "skills": {
+        "h2": "Compétences"
+    },
+    "background": {
+        "h2": "Parcours",
+        "box-timeline": [
+            {
+                "id": "i1",
+                "h3": "",
+                "time": [
+                    "2022",
+                    "2023"
+                ],
+                "p": "Formation de Web Application Developer"
+            },
+            {
+                "id": "i2",
+                "h3": "Eté",
+                "time": "2022",
+                "p": "Bootcamp de programmation en C"
+            },
+            {
+                "id": "i3",
+                "h3": "Conférence",
+                "time": "2022",
+                "p": "Stop au statut de cohabitant.e ! 40 ans de combats féministes et syndicaux"
+            },
+            {
+                "id": "i4",
+                "h3": "Étude",
+                "time": "2021",
+                "p": "Une lecture féministe de la justice fiscale"
+            },
+            {
+                "id": "i5",
+                "h3": "Événement",
+                "time": "2020",
+                "p": "Covid-19: les familles livrées à elles-mêmes?"
+            },
+            {
+                "id": "i6",
+                "h3": "Étude",
+                "time": "2019",
+                "p": "Du chômage au CPAS: récits de femmes"
+            },
+            {
+                "id": "i7",
+                "h3": "",
+                "time": [
+                    "2018",
+                    "2022"
+                ],
+                "p": "Chargée de projets et d'études dans le milieu associatif"
+            },
+            {
+                "id": "i8",
+                "h3": "Conférence",
+                "time": "2018",
+                "p": "Journée des Centres de Planning des FPS"
+            },
+            {
+                "id": "i9",
+                "h3": "",
+                "time": "2018",
+                "p": "Chargée de mission dans sein d'une association"
+            },
+            {
+                "id": "i10",
+                "h3": "Décembre",
+                "time": "2018",
+                "p": "Start & Code: introduction à la programmation"
+            },
+            {
+                "id": "i11",
+                "h3": "Diplome",
+                "time": "2017",
+                "p": "Master en Sciences de la Population et du Développement"
+            },
+            {
+                "id": "i12",
+                "h3": "Stage de Master",
+                "time": "2016",
+                "p": "Programmes de coopération et d'enseignement"
+            },
+            {
+                "id": "i13",
+                "h3": "Diplome",
+                "time": "2015",
+                "p": "Bachelier en Sociologie et Anthropologie"
+            }
+        ]
+    },
+    "contact": {
+        "h2": "Contact",
+        "p": [
+            "Je suis actuellement à la recherche de nouvelles opportunités.",
+            "Collaborons ensemble."
+        ]
+    }
+}
