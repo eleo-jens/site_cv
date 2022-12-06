@@ -2,13 +2,13 @@
     "head": {
         "title": "Eléonore Stultjens's CV"
     },
-    "menu": {
-        "about": "About",
-        "projects": "Projects",
-        "skills": "Skills",
-        "background": "Background",
-        "contact": "Contact"
-    },
+    "menu": [
+        "About",
+        "Projects",
+        "Skills",
+        "Background",
+        "Contact"
+    ],
     "hero": {
         "h1": "Eléonore Stultjens",
         "h2": "Junior Web Developer",
@@ -18,37 +18,29 @@
     "about": {
         "h2": "About",
         "p": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium eum voluptatibus corporis blanditiis sequi dicta sed asperiores odit quidem quos est in quas id explicabo fugiat illumperspiciatis expedita officiis, ratione ut? Suscipit consequunturnam illum tenetur, vero rem repellendus, voluptates laudantiumlaboriosam cum, corrupti labore officiis ea praesentium. Suscipiconsequuntur nam illum tenetur, vero rem repellendus, voluptateslaudantium laboriosam cum, corrupti labore officiis eapraesentium.",
-        "img": "Pofile picture"
+        "img": "Profile picture"
     },
     "projects": {
         "h2": "Projects",
         "all": "All",
-        "galerie": [
-            {
-                "h3": "SuITs You"
-            },
-            {
-                "h3": "CV Website"
-            },
-            {
-                "h3": "WadFlix"
-            },
-            {
-                "h3": "Angular Demo"
-            },
-            {
-                "h3": "Project 5"
-            }
-        ]
+        "galerie": {
+            "h3" : ["SuITs You",
+            "CV Website",
+            "WadFlix",
+            "Angular Demo",
+            "Project 5"],
+            "alt" : "Picture of my project "
+        }
     },
     "skills": {
         "h2": "Skills"
     },
     "background": {
         "h2": "Background",
-        "box-timeline": [
+        "boxtimeline": [
             {
                 "id": "i1",
+                "url": "https://www.interface3.be/fr/formation/web-application-developer",
                 "h3": "",
                 "time": [
                     "2022",
@@ -58,36 +50,42 @@
             },
             {
                 "id": "i2",
+                "url": "https://campus19.be",
                 "h3": "Summer",
                 "time": "2022",
                 "p": "C Programming Bootcamp"
             },
             {
                 "id": "i3",
+                "url" : "https://www.facebook.com/Soralia.Mouvement/videos/637929034173028/",
                 "h3": "Conference",
                 "time": "2022",
                 "p": "Stop au statut de cohabitant.e ! 40 ans de combats féministes et syndicaux"
             },
             {
                 "id": "i4",
+                "url": "https://www.soralia.be/wp-content/uploads/2021/12/Etude2021-Justice-fiscale.pdf",
                 "h3": "Research",
                 "time": "2021",
                 "p": "Une lecture féministe de la justice fiscale"
             },
             {
                 "id": "i5",
+                "url": "https://www.facebook.com/events/260928288311233/?active_tab=about",
                 "h3": "Event",
                 "time": "2020",
                 "p": "Covid-19: les familles livrées à elles-mêmes?"
             },
             {
                 "id": "i6",
+                "url": "https://www.soralia.be/wp-content/uploads/2019/12/Etude2019_Du-chomage-au-CPAS_compressed.pdf",
                 "h3": "Research",
                 "time": "2019",
                 "p": "Du chômage au CPAS: récits de femmes"
             },
             {
                 "id": "i7",
+                "url": "https://www.soralia.be",
                 "h3": "",
                 "time": [
                     "2018",
@@ -97,36 +95,42 @@
             },
             {
                 "id": "i8",
+                "url": "https://www.sofelia.be",
                 "h3": "Conference",
                 "time": "2018",
                 "p": "Journée des Centres de Planning des FPS"
             },
             {
                 "id": "i9",
+                "url": "https://www.sofelia.be",
                 "h3": "",
                 "time": "2018",
                 "p": "Mission leader in non-profit organisation"
             },
             {
                 "id": "i10",
+                "url": "https://www.interface3.be",
                 "h3": "December",
                 "time": "2018",
                 "p": "Start & Code: coding introduction"
             },
             {
                 "id": "i11",
+                "url": "https://www.ulb.be",
                 "h3": "Diploma",
                 "time": "2017",
                 "p": "Master in Population and Development Sciences"
             },
             {
                 "id": "i12",
+                "url": "https://www.sambhali.org",
                 "h3": "Internship",
                 "time": "2016",
                 "p": "Cooperation and Teaching programs"
             },
             {
                 "id": "i13",
+                "url": "https://www.ulb.be",
                 "h3": "Diploma",
                 "time": "2015",
                 "p": "Bachelor in Sociology and Anthropology"
@@ -138,6 +142,8 @@
         "p": [
             "I’m currently looking for new opportunities.",
             "Let’s get in touch to collaborate together."
-        ]
+        ],
+        "me": "./assets/img/contact.mesvg.svg",
+        "cv" : "Download my CV"
     }
 }

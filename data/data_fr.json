@@ -2,13 +2,13 @@
     "head": {
         "title": "CV d'Eléonore Stultjens"
     },
-    "menu": {
-        "about": "A props",
-        "projects": "Projets",
-        "skills": "Compétences",
-        "background": "Parcours",
-        "contact": "Contact"
-    },
+    "menu": [
+        "A propos",
+        "Projets",
+        "Compétences",
+        "Parcours",
+        "Contact"
+    ],
     "hero": {
         "h1": "Eléonore Stultjens",
         "h2": "Développeuse Web Junior",
@@ -23,32 +23,24 @@
     "projects": {
         "h2": "Projets",
         "all": "Tout",
-        "galerie": [
-            {
-                "h3": "SuITs You"
-            },
-            {
-                "h3": "Site CV"
-            },
-            {
-                "h3": "WadFlix"
-            },
-            {
-                "h3": "Démo Angular"
-            },
-            {
-                "h3": "Projet 5"
-            }
-        ]
+        "galerie": {
+            "h3" : ["SuITs You",
+            "Site CV",
+            "WadFlix",
+            "Démo Angular",
+            "Projet 5"],
+            "alt" : "Photo de mon projet "
+        }
     },
     "skills": {
         "h2": "Compétences"
     },
     "background": {
         "h2": "Parcours",
-        "box-timeline": [
+        "boxtimeline": [
             {
                 "id": "i1",
+                "url": "https://www.interface3.be/fr/formation/web-application-developer",
                 "h3": "",
                 "time": [
                     "2022",
@@ -58,36 +50,42 @@
             },
             {
                 "id": "i2",
+                "url": "https://campus19.be",
                 "h3": "Eté",
                 "time": "2022",
                 "p": "Bootcamp de programmation en C"
             },
             {
                 "id": "i3",
+                "url" : "https://www.facebook.com/Soralia.Mouvement/videos/637929034173028/",
                 "h3": "Conférence",
                 "time": "2022",
                 "p": "Stop au statut de cohabitant.e ! 40 ans de combats féministes et syndicaux"
             },
             {
                 "id": "i4",
+                "url": "https://www.soralia.be/wp-content/uploads/2021/12/Etude2021-Justice-fiscale.pdf",
                 "h3": "Étude",
                 "time": "2021",
                 "p": "Une lecture féministe de la justice fiscale"
             },
             {
                 "id": "i5",
+                "url": "https://www.facebook.com/events/260928288311233/?active_tab=about",
                 "h3": "Événement",
                 "time": "2020",
                 "p": "Covid-19: les familles livrées à elles-mêmes?"
             },
             {
                 "id": "i6",
+                "url": "https://www.soralia.be/wp-content/uploads/2019/12/Etude2019_Du-chomage-au-CPAS_compressed.pdf",
                 "h3": "Étude",
                 "time": "2019",
                 "p": "Du chômage au CPAS: récits de femmes"
             },
             {
                 "id": "i7",
+                "url": "https://www.soralia.be/wp-content/uploads/2019/12/Etude2019_Du-chomage-au-CPAS_compressed.pdf",
                 "h3": "",
                 "time": [
                     "2018",
@@ -97,24 +95,28 @@
             },
             {
                 "id": "i8",
+                "url": "https://www.sofelia.be",
                 "h3": "Conférence",
                 "time": "2018",
                 "p": "Journée des Centres de Planning des FPS"
             },
             {
                 "id": "i9",
+                "url": "https://www.sofelia.be",
                 "h3": "",
                 "time": "2018",
                 "p": "Chargée de mission dans sein d'une association"
             },
             {
                 "id": "i10",
+                "url": "https://www.interface3.be",
                 "h3": "Décembre",
                 "time": "2018",
                 "p": "Start & Code: introduction à la programmation"
             },
             {
                 "id": "i11",
+                "url": "https://www.ulb.be",
                 "h3": "Diplome",
                 "time": "2017",
                 "p": "Master en Sciences de la Population et du Développement"
@@ -122,11 +124,13 @@
             {
                 "id": "i12",
                 "h3": "Stage de Master",
+                "url": "https://www.sambhali.org",
                 "time": "2016",
                 "p": "Programmes de coopération et d'enseignement"
             },
             {
                 "id": "i13",
+                "url": "https://www.ulb.be",
                 "h3": "Diplome",
                 "time": "2015",
                 "p": "Bachelier en Sociologie et Anthropologie"
@@ -138,6 +142,8 @@
         "p": [
             "Je suis actuellement à la recherche de nouvelles opportunités.",
             "Collaborons ensemble."
-        ]
+        ],
+        "me": "./assets/img/contact.mesvg.svg",
+        "cv" : "Téléchargez mon CV"
     }
 }
