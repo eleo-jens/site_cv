@@ -20,7 +20,7 @@ const projects_galerie_img = document.querySelectorAll("#projects #galerie img")
 const skills_h2 = document.querySelector("#skills h2");
 
 const background_h2 = document.querySelector("#background h2");
-const background_timeline =document.querySelector("#background .box-timeline");
+background_timeline = document.querySelector("#background .box-timeline");
 
 const contact_p1 = document.querySelector("#contact p");
 const contact_p2 = document.querySelector("#contact p~p");
@@ -81,7 +81,15 @@ const fill_content = function(data) {
     skills_h2.innerText = data.skills.h2;
     
     background_h2.innerText = data.background.h2;
-    create_timeline(data);
+    if (background_timeline.children.length == data.background.boxtimeline.length){
+        let child = background_timeline.firstElementChild;
+        while(child){
+            child.remove();
+            child = background_timeline.firstElementChild;
+        }
+        console.log(background_timeline);
+        create_timeline(data);
+    }
     
     contact_p1.innerText = data.contact.p[0];
     contact_p2.innerText = data.contact.p[1];
@@ -93,33 +101,3 @@ const fill_content = function(data) {
         projects_galerie_img[i].alt = `${data.projects.galerie.alt} ${data.projects.galerie.h3[i]}`;
     }
 };
-
-const create_timeline = function (data){
-    console.log("je crée la ligne du temps");
-    console.log(data.background)
-    console.log (data.background.boxtimeline.length);
-    for (let i = 0; i < data.background.boxtimeline.length; i++){
-       let item = document.createElement("div");
-       item.classList.add("timeline-item");
-       let a = document.createElement("a");
-       a.href = data.background.boxtimeline[0].url;
-       a.target = "_blank";
-       let div = document.createElement("div");
-       div.classList.add("item-description");
-       let p = document.createElement("p");
-       p.innerText = data.background.boxtimeline[0].p;
-
-    }
-
-    
-    //ajout de l'id incrémenté
-    let h3 = document.createElement("h3");
-    let img = document.createElement("img");
-    let svg = document.createElement("svg");
-    svg.classList.add("timeline-card-svg");
-    svg.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink");
-    let path = document.createElement("path");
-    path.setAttribute("d", "M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z");
-    svg.appendChild(path);
-    // background_timeline.appendChild();
-}

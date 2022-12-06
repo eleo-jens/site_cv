@@ -46,42 +46,72 @@
                     "2022",
                     "2023"
                 ],
-                "p": "Web Application Developer Training"
+                "p": "Web Application Developer Training",
+                "img": {
+                    "class": "img-carre",
+                    "src" : "./assets/img/timeline/interface3.png",
+                    "alt" : "Logo of Interface3"
+                }
             },
             {
                 "id": "i2",
                 "url": "https://campus19.be",
                 "h3": "Summer",
                 "time": "2022",
-                "p": "C Programming Bootcamp"
+                "p": "C Programming Bootcamp",
+                "img": {
+                    "class": "img-carre",
+                    "src" : "./assets/img/timeline/s19noir.svg",
+                    "alt" : "Logo of School 19"
+                }
             },
             {
                 "id": "i3",
                 "url" : "https://www.facebook.com/Soralia.Mouvement/videos/637929034173028/",
                 "h3": "Conference",
                 "time": "2022",
-                "p": "Stop au statut de cohabitant.e ! 40 ans de combats féministes et syndicaux"
+                "p": "Stop au statut de cohabitant.e ! 40 ans de combats féministes et syndicaux",
+                "img": {
+                    "class": "img-rect",
+                    "src" : "./assets/img/timeline/conference2022.png",
+                    "alt" : "Photo of Eleonore during a conference in 2022"
+                }
             },
             {
                 "id": "i4",
                 "url": "https://www.soralia.be/wp-content/uploads/2021/12/Etude2021-Justice-fiscale.pdf",
                 "h3": "Research",
                 "time": "2021",
-                "p": "Une lecture féministe de la justice fiscale"
+                "p": "Une lecture féministe de la justice fiscale",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/etude2021.png",
+                    "alt" : "Cover of the FPS 2021 Research"
+                }
             },
             {
                 "id": "i5",
                 "url": "https://www.facebook.com/events/260928288311233/?active_tab=about",
                 "h3": "Event",
                 "time": "2020",
-                "p": "Covid-19: les familles livrées à elles-mêmes?"
+                "p": "Covid-19: les familles livrées à elles-mêmes?",
+                "img": {
+                    "class": "img-rect",
+                    "src" : "./assets/img/timeline/conference2020.png",
+                    "alt" : "Cover of the FPS 2020 Conference"
+                }
             },
             {
                 "id": "i6",
                 "url": "https://www.soralia.be/wp-content/uploads/2019/12/Etude2019_Du-chomage-au-CPAS_compressed.pdf",
                 "h3": "Research",
                 "time": "2019",
-                "p": "Du chômage au CPAS: récits de femmes"
+                "p": "Du chômage au CPAS: récits de femmes",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/etude2019.png",
+                    "alt" : "Cover of the FPS 2019 Research"
+                }
             },
             {
                 "id": "i7",
@@ -91,49 +121,84 @@
                     "2018",
                     "2022"
                 ],
-                "p": "Project Manager and Research in non-profit organisation"
+                "p": "Project Manager and Research in non-profit organisation",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/soralia.png",
+                    "alt" : "Logo of Soralia"
+                }
             },
             {
                 "id": "i8",
                 "url": "https://www.sofelia.be",
                 "h3": "Conference",
                 "time": "2018",
-                "p": "Journée des Centres de Planning des FPS"
+                "p": "Journée des Centres de Planning des FPS",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/conference2018.png",
+                    "alt" : "Cover of Sofelia 2018 Conference"
+                }
             },
             {
                 "id": "i9",
                 "url": "https://www.sofelia.be",
                 "h3": "",
                 "time": "2018",
-                "p": "Mission leader in non-profit organisation"
+                "p": "Mission leader in non-profit organisation",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/sofelia.jpg",
+                    "alt" : "Logo of Sofelia"
+                }
             },
             {
                 "id": "i10",
                 "url": "https://www.interface3.be",
                 "h3": "December",
                 "time": "2018",
-                "p": "Start & Code: coding introduction"
+                "p": "Start & Code: coding introduction",
+                "img": {
+                    "class": "img-carre",
+                    "src" : "./assets/img/timeline/interface3.png",
+                    "alt" : "Logo of Interface3"
+                }
             },
             {
                 "id": "i11",
                 "url": "https://www.ulb.be",
                 "h3": "Diploma",
                 "time": "2017",
-                "p": "Master in Population and Development Sciences"
+                "p": "Master in Population and Development Sciences",
+                "img": {
+                    "class": "img-carre",
+                    "src" : "./assets/img/timeline/ulb.png",
+                    "alt" : "Logo of ULB"
+                }
             },
             {
                 "id": "i12",
                 "url": "https://www.sambhali.org",
                 "h3": "Internship",
                 "time": "2016",
-                "p": "Cooperation and Teaching programs"
+                "p": "Cooperation and Teaching programs",
+                "img": {
+                    "class": "",
+                    "src" : "./assets/img/timeline/sambhali.png",
+                    "alt" : "Logo of Sambhali Trust"
+                }
             },
             {
                 "id": "i13",
                 "url": "https://www.ulb.be",
                 "h3": "Diploma",
                 "time": "2015",
-                "p": "Bachelor in Sociology and Anthropology"
+                "p": "Bachelor in Sociology and Anthropology",
+                "img": {
+                    "class": "img-carre",
+                    "src" : "./assets/img/timeline/ulb.png",
+                    "alt" : "Logo of ULB"
+                }
             }
         ]
     },
