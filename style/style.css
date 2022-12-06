@@ -16,8 +16,8 @@
 html {
     box-sizing: border-box;
     color: #202020;
+    scroll-behavior: smooth;
 }
-
 *,
 *:before,
 *:after {
@@ -134,9 +134,9 @@ header {
     flex: 0 1 20%;
 } */
 
-.nav-toggler {
-    /* visibility: hidden; */
-}
+/* .nav-toggler {
+    visibility: hidden;
+} */
 
 /* .flex-item.toggles {
     display: flex;
@@ -200,10 +200,10 @@ marquee {
 }
 
 .bulle {
-    width: 46px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,10 +221,13 @@ marquee {
     transition: color 2s ease-out;
 }
 
-.icones ul li a:hover {
-    color: darkgray;
+.bulle:hover {
+    background-color: #343434;
 }
 
+.bulle:hover i {
+    color: white;
+}
 
 /*About
 ------------------------------- */
@@ -273,6 +276,7 @@ Chrome, Safari and Opera */
 
 div#galerie::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 }
 

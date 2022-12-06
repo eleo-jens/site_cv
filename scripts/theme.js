@@ -5,8 +5,7 @@ theme_toggle.addEventListener("click", function () {
     if (visible_icon[0].classList.contains("fa-moon") || visible_icon[0].classList.contains("fa-sun")) {
         visible_icon[0].classList.toggle("fa-moon");
         visible_icon[0].classList.toggle("fa-sun");
-        document.body.style.backgroundColor = "#656587";
+        document.body.classList.toggle("light");
+        document.body.classList.toggle("dark");
     }
 });
-
-// créer un toggle qui active une classe .dark et désactive une classe .light et vice-verca

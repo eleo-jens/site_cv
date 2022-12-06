@@ -2,7 +2,7 @@ svg#filter {
   position: absolute;
 }
 
-body::before, body::after {
+body.light::before, body.light::after {
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -22,10 +22,31 @@ body::before, body::after {
   mix-blend-mode: color;
   content: "";
 }
-body::before {
+body.light::before {
   background: #000;
   filter: url(#f);
 }
-body::after {
+body.light::after {
   background: linear-gradient(90deg, purple, navy 20%, aqua);
+}
+
+body.dark::before, body.dark::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  --grad:
+  	radial-gradient(at 95%,
+  			red, rgba(255, 0, 0, 0.3) 100%, transparent 80%);
+  --mask: var(--grad), var(--grad);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  mix-blend-mode: color;
+  content: "";
+}
+body.dark::before {
+  background: black;
+  filter: url(#f);
+}
+body.dark::after {
+  background: linear-gradient(-45deg, purple, navy 90%);
 }/*# sourceMappingURL=background.css.map */

@@ -6,9 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eléonore Stultjens's CV</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/burger.css" />
   <link rel="stylesheet" href="./style/background.css">
+  <link rel="stylesheet" href="./style/top.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/5bb1968648.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
     integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
@@ -23,10 +26,11 @@
   <script type="text/JavaScript" src="./scripts/modal.js" defer></script>
   <script type="text/JavaScript" src="./scripts/theme.js" defer></script>
   <script type="text/JavaScript" src="./scripts/animation.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/scrollTop.js" defer></script>
   <script type="module" src="./scripts/skills.js" defer></script>
 </head>
 
-<body>
+<body class="light">
   <svg id="filter">
     <filter id='f'>
       <feTurbulence type='fractalNoise' baseFrequency='9.5'/>
@@ -34,7 +38,7 @@
   </svg>
   <!-- HEADER AND NAVIGATION -->
   <header>
-    <a class="flex-item" href="#"><img src="./assets/img/logoexample.png" alt="logo" /></a>
+    <a class="flex-item" href="#"><img src="./assets/img/logoexample2.png" alt="logo" /></a>
     <nav class="flex-item-menu">
       <ul class="menu">
         <li><a href="#about">About</a></li>
@@ -58,6 +62,7 @@
 
   </header>
   <main>
+    <a id="top"></a>
     <!-- HERO SECTION -->
     <section id="hero">
       <div class="content-wrap">

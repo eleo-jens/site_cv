@@ -2,7 +2,7 @@ svg#filter {
   position: absolute;
 }
 
-body {
+body.light {
   &::before,
   &::after {
     position: fixed;
@@ -31,4 +31,29 @@ body {
   &::after {
     background: linear-gradient(90deg, purple, navy 20%, aqua);
   }
+}
+
+body.dark {
+	&::before, &::after {
+		position: fixed;
+		inset: 0;
+		z-index: -1;
+		--grad: 
+			radial-gradient(at 95%, 
+					red, #{rgba(red, .3)} 100%, transparent 80%);
+		--mask: var(--grad), var(--grad);
+		-webkit-mask: var(--mask);
+						mask: var(--mask);
+		mix-blend-mode: color;
+		content: ''
+	}
+	
+	&::before {
+		background: black;
+		filter: url(#f)
+	}
+	
+	&::after {
+		background: linear-gradient(-45deg, purple, navy 90%);
+	}
 }
