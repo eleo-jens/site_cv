@@ -84,6 +84,19 @@ h3 {
     padding: 60px 0;
 }
 
+noscript>div
+{
+    background-color: darksalmon;
+    position: fixed;
+    margin-left: 12%;
+    margin-top: 5%;
+    padding: 10rem;
+    z-index: 12;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+
 /* .modal-open {
     height: 100vh;
     overflow-y: hidden;
