@@ -1,19 +1,34 @@
+svg#filter {
+  position: absolute;
+}
+
 body {
-    &::before, &::after {
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        -webkit-mask: radial-gradient(red, transparent);
-        mask: radial-gradient(red, transparent);
-        content: '';
-    }
+  &::before,
+  &::after {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    --grad: radial-gradient(
+      at 25%,
+      red,
+      #{rgba(red, 0.2)} 50%,
+      transparent 70%
+    );
+    --mask: var(--grad), var(--grad);
+    -webkit-mask: var(--mask);
+    -webkit-mask-composite: source-in;
+    mask: var(--mask);
+    mask-composite: intersect;
+    mix-blend-mode: color;
+    content: "";
+  }
 
-    &::before {
-        background: #000;
-        filter: url(#filter);
-    }
+  &::before {
+    background: #000;
+    filter: url(#f);
+  }
 
-    &::after {
-        background: linear-gradient(navy, aqua);
-    }
+  &::after {
+    background: linear-gradient(90deg, purple, navy 20%, aqua);
+  }
 }
