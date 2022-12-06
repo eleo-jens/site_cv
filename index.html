@@ -8,22 +8,30 @@
   <title>Eléonore Stultjens's CV</title>
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/burger.css" />
+  <link rel="stylesheet" href="./style/background.scss">
   <script src="https://kit.fontawesome.com/5bb1968648.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
     integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script type="text/JavaScript" src="./scripts/burger.js" defer></script>
   <script type="text/JavaScript" src="./scripts/filter.js" defer></script>
   <script type="text/JavaScript" src="./scripts/timeline.js" defer></script>
   <script type="text/JavaScript" src="./scripts/language.js" defer></script>
   <script type="text/JavaScript" src="./scripts/modal.js" defer></script>
   <script type="text/JavaScript" src="./scripts/theme.js" defer></script>
+  <script type="text/JavaScript" src="./scripts/animation.js" defer></script>
   <script type="module" src="./scripts/skills.js" defer></script>
 </head>
 
 <body>
+  <svg>
+    <filter id='f'>
+      <feTurbulence type='fractalNoise' baseFrequency='7.5'/>
+    </filter>
+  </svg>
   <!-- HEADER AND NAVIGATION -->
   <header>
     <a class="flex-item" href="#"><img src="./assets/img/logoexample.png" alt="logo" /></a>
@@ -57,23 +65,23 @@
         <h2>Junior Web Developer</h2>
         <h3>Bilingual EN | FR</h3>
       </div>
-      <div class="icones">
-        <ul>
-          <li>
+      <!-- <div class="icones"> -->
+        <ul class="icones">
+          <li class="bulle">
             <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
           </li>
-          <li>
+          <li class="bulle">
             <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
                 class="fa-brands fa-linkedin-in fa-xl"></i></a>
           </li>
-          <li>
+          <li class="bulle">
             <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
           </li>
-          <li>
+          <li class="bulle">
             <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down fa-xl"></i></a>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
       <aside class="moving-text">
         <marquee>
           Looking for a 8 weeks Web Developer internship from April 2023 to
