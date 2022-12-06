@@ -1,6 +1,18 @@
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
-let language = document.querySelector(".language").innerText;
+const language_btn = document.querySelector(".language");
+let language = "";
+
+language_btn.addEventListener('click', function () {
+  // console.log(language_btn.innerText);
+  if (language_btn.innerText == "FR"){
+    language = "EN";
+  }
+  else {
+    language = "FR";
+  }
+  // console.log (`la langue de ma modal doit être du : ${language}`)
+})
 
 let projectItems = document.querySelectorAll(".project-item");
 let id; 
@@ -15,26 +27,26 @@ modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
 function toggleModal() {
   modalContainer.classList.toggle("active");
   const url = get_language_json();
+  // console.log(url);
   if (modalContainer.classList.contains("active")){
     fetch(url)
       .then((response) => response.json())
       .then((jsonData) => {
-        console.log(jsonData);
+        // console.log(jsonData);
         fillContent(jsonData, id);
       });
   }
 }
 
 function get_language_json() {
+  // console.log(language);
   let url = ""; 
   switch (language) {
-    // If the value is FR, it means the content is for now in english
     case "FR":
-      url = '../data/portfolio_en.json';
-      break;
-      // If the value is EN, it means the content is for now in french
-    case "EN":
       url = '../data/portfolio_fr.json';
+      break;
+    case "EN":
+      url = '../data/portfolio_en.json';
         break;
   }
   return url;

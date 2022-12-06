@@ -39,11 +39,11 @@ language_toggle.addEventListener("click", function () {
             console.log("Je parle français");
             get_data("fr");
             break;
-        default:
-            language_toggle.innerText = "FR";
-            console.log("I speak english");
-            get_data("en");
-            break;
+        // default:
+        //     language_toggle.innerText = "FR";
+        //     console.log("I speak english");
+        //     get_data("en");
+        //     break;
     }
 });
 
