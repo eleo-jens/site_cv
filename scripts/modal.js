@@ -4,7 +4,7 @@ const language_btn = document.querySelector(".language");
 let language = "";
 
 language_btn.addEventListener('click', function () {
-  if (language_btn.innerText == "FR"){
+  if (language_btn.innerText == "FR") {
     language = "EN";
   }
   else {
@@ -13,8 +13,8 @@ language_btn.addEventListener('click', function () {
 })
 
 let projectItems = document.querySelectorAll(".project-item");
-let id; 
-for(let i = 0; i < projectItems.length; i++){
+let id;
+for (let i = 0; i < projectItems.length; i++) {
   projectItems[i].addEventListener("click", function (event) {
     id = this.id;
   });
@@ -25,7 +25,7 @@ modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
 function toggleModal() {
   modalContainer.classList.toggle("active");
   const url = get_language_json();
-  if (modalContainer.classList.contains("active")){
+  if (modalContainer.classList.contains("active")) {
     fetch(url)
       .then((response) => response.json())
       .then((jsonData) => {
@@ -35,22 +35,24 @@ function toggleModal() {
 }
 
 function get_language_json() {
-  let url = ""; 
+  let url = "";
   switch (language) {
     case "FR":
       url = '../data/portfolio_fr.json';
       break;
     case "EN":
       url = '../data/portfolio_en.json';
-        break;
+      break;
+    default:
+      url = '../data/portfolio_en.json';
+      break;
   }
   return url;
 }
 
-function fillContent(data, id){
+function fillContent(data, id) {
   try {
-    if (id == data.projects[id].id)
-    { 
+    if (id == data.projects[id].id) {
       let h2 = document.getElementById("project-title");
       let description = document.getElementById("description");
       let tag = document.getElementById("tag");
@@ -67,7 +69,7 @@ function fillContent(data, id){
 
       let length = data.projects[id].tag.length;
       tag.innerHTML = "";
-      if (length > 0){
+      if (length > 0) {
         for (let i = 0; i < length; i++) {
           let p = document.createElement("p");
           p.innerHTML = data.projects[id].tag[i];
@@ -75,7 +77,7 @@ function fillContent(data, id){
         }
       }
 
-      if (data.projects[id].website != ""){
+      if (data.projects[id].website != "") {
         website.setAttribute("href", data.projects[id].website);
         website.setAttribute("target", "_blank");
         media_url.setAttribute("href", data.projects[id].website);

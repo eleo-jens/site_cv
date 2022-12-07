@@ -39,11 +39,6 @@ language_toggle.addEventListener("click", function () {
             console.log("Je parle français");
             get_data("fr");
             break;
-        // default:
-        //     language_toggle.innerText = "FR";
-        //     console.log("I speak english");
-        //     get_data("en");
-        //     break;
     }
 });
 
@@ -57,7 +52,7 @@ const get_data = function (lang) {
         });
 }
 
-const fill_content = function(data) {
+const fill_content = function (data) {
     console.log(data);
     head_title.innerText = data.head.title;
 
@@ -76,27 +71,27 @@ const fill_content = function(data) {
 
     projects_h2.innerText = data.projects.h2;
     projects_all.innerText = data.projects.all;
-    
-    
+
+
     skills_h2.innerText = data.skills.h2;
-    
+
     background_h2.innerText = data.background.h2;
-    if (background_timeline.children.length == data.background.boxtimeline.length){
+    if (background_timeline.children.length == data.background.boxtimeline.length) {
         let child = background_timeline.firstElementChild;
-        while(child){
+        while (child) {
             child.remove();
             child = background_timeline.firstElementChild;
         }
         console.log(background_timeline);
         create_timeline(data);
     }
-    
+
     contact_p1.innerText = data.contact.p[0];
     contact_p2.innerText = data.contact.p[1];
     contact_me.src = data.contact.me,
-    contact_cv.innerText = data.contact.cv;
-    
-    for (let i = 0; projects_galerie_h3.length; i++){
+        contact_cv.innerText = data.contact.cv;
+
+    for (let i = 0; i < projects_galerie_h3.length; i++) {
         projects_galerie_h3[i].innerText = data.projects.galerie.h3[i];
         projects_galerie_img[i].alt = `${data.projects.galerie.alt} ${data.projects.galerie.h3[i]}`;
     }
