@@ -89,15 +89,26 @@ const create_svg = function () {
 
 //Faire bouger la timeline avec les fleches cliquables
 
+const background_section = document.querySelector("section#background");
+background_timeline.scrollLeft = 0;
 const left_arrow = document.querySelector("#left");
 const right_arrow = document.querySelector("#right");
+// const timeline_item = document.querySelector(".timeline-item");
+// console.log(timeline_item.offsetWidth);
 right_arrow.hidden = true;
 
 let width = background_timeline.offsetWidth - 100;
+let count = 1;
 
 left_arrow.addEventListener("click", function () {
   right_arrow.hidden = false;
   background_timeline.scrollLeft -= width;
+  console.log(background_timeline.scrollLeft);
+  console.log(width * count)
+  count++;
+  if (background_timeline.scrollLeft == (width * count)){
+    left_arrow.hidden = true;
+  }
 });
 
 right_arrow.addEventListener("click", function () {
@@ -106,3 +117,12 @@ right_arrow.addEventListener("click", function () {
     right_arrow.hidden = true;
   }
 });
+
+background_section.addEventListener("scroll", function() {
+  console.log("je suis en focus sur la timeline");
+})
+
+// const timeline_item = document.querySelector(".timeline-item");
+// const item_width = timeline_item.offsetWidth;
+// const total_div_width = item_width * 7 + 
+// background_timeline.childElementCount
