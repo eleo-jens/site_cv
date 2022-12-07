@@ -1,6 +1,6 @@
 /**
  * Script to create my background timeline from a json data file
-*/
+ */
 
 // get the data from json file
 fetch("./data/data_en.json")
@@ -26,7 +26,7 @@ const create_timeline = function (data) {
     p.innerText = data.background.boxtimeline[i].p;
     let img = create_img(data, i);
     let svg = create_svg();
-    
+
     div.appendChild(h3);
     div.appendChild(p);
     a.appendChild(div);
@@ -86,3 +86,23 @@ const create_svg = function () {
   svg.appendChild(path);
   return svg;
 };
+
+//Faire bouger la timeline avec les fleches cliquables
+
+const left_arrow = document.querySelector("#left");
+const right_arrow = document.querySelector("#right");
+right_arrow.hidden = true;
+
+let width = background_timeline.offsetWidth - 100;
+
+left_arrow.addEventListener("click", function () {
+  right_arrow.hidden = false;
+  background_timeline.scrollLeft -= width;
+});
+
+right_arrow.addEventListener("click", function () {
+  background_timeline.scrollLeft += width;
+  if (background_timeline.scrollLeft == 0){
+    right_arrow.hidden = true;
+  }
+});

@@ -489,11 +489,15 @@ img#media {
 
 /* Background
 ------------------------------- */
+#background>div.content-wrap {
+    position: relative;
+}
+
 .box-timeline {
     display: flex;
     flex-direction: row-reverse;
     height: 550px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     width: auto;
     align-items: flex-start;
 }
@@ -605,6 +609,24 @@ img#media {
     top: -30px;
     margin-top: -27px;
     transform: scaleY(-1) translate(-50%);
+}
+
+#left {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: 330px;
+    left: -45px
+}
+
+#right {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: 330px;
+    right: -45px;
 }
 
 /* Contact
