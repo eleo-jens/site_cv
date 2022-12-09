@@ -1,4 +1,6 @@
 const language_toggle = document.querySelector(".language");
+console.log(language_toggle.classList);
+
 const head_title = document.querySelector("head title");
 
 const menu_names = document.querySelectorAll(".menu li a");
@@ -28,14 +30,35 @@ const contact_me = document.querySelector("#contact a img");
 const contact_cv = document.querySelector("#contact .button-container a");
 
 language_toggle.addEventListener("click", function () {
-    switch (language_toggle.innerText) {
-        case "EN":
-            language_toggle.innerText = "FR";
+    // switch (language_toggle.innerText) {
+    //     case "EN":
+    //         language_toggle.innerText = "FR";
+    //         console.log("I speak english");
+    //         get_data("en");
+    //         break;
+    //     case "FR":
+    //         language_toggle.innerText = "EN";
+    //         console.log(language_toggle.src);
+    //         console.log("Je parle français");
+    //         get_data("fr");
+    //         break;
+    // }
+
+
+    switch (language_toggle.classList[2]) {
+        case "FR":
+            language_toggle.src = "./assets/img/icons8-france-48.png";
+            language_toggle.classList.remove("FR");
+            language_toggle.classList.add("EN");
             console.log("I speak english");
             get_data("en");
             break;
-        case "FR":
-            language_toggle.innerText = "EN";
+        case "EN":
+            console.log(language_toggle.src);
+            "/assets/img/icons8-great-britain-48.png"
+            language_toggle.src = "/assets/img/icons8-great-britain-48.png";
+            language_toggle.classList.remove("EN");
+            language_toggle.classList.add("FR");
             console.log("Je parle français");
             get_data("fr");
             break;
