@@ -66,7 +66,7 @@ const fill_content = function (data) {
     hero_marquee.innerText = data.hero.marquee;
 
     about_h2.innerText = data.about.h2;
-    about_p.innerText = data.about.p;
+    about_p.innerHTML = data.about.p;
     about_img.alt = data.about.img;
 
     projects_h2.innerText = data.projects.h2;

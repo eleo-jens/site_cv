@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eléonore Stultjens's CV</title>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="./style/burger.css" />
   <link rel="stylesheet" href="./style/background.css">
@@ -33,7 +34,7 @@
 <body class="light">
   <svg id="filter">
     <filter id='f'>
-      <feTurbulence type='fractalNoise' baseFrequency='9.5'/>
+      <feTurbulence type='fractalNoise' baseFrequency='9.5' />
     </filter>
   </svg>
   <!-- HEADER AND NAVIGATION -->
@@ -48,8 +49,12 @@
         <li><a href="#contact">Contact</a></li>
         <!-- <div class="flex-item toggles"> -->
         <!-- <div class="toggles"> -->
-          <li><p class="language toggles">FR</p></li>
-          <li><p class="theme toggles"><i class="fa-solid fa-moon"></i></p></li>
+        <li>
+          <p class="language toggles">FR</p>
+        </li>
+        <li>
+          <p class="theme toggles"><i class="fa-solid fa-moon"></i></p>
+        </li>
         <!-- </div> -->
       </ul>
     </nav>
@@ -65,10 +70,10 @@
     <a id="top"></a>
     <noscript>
       <div>
-          <h1>JavaScript est important!</h1>
-          <p>Il semble que votre navigateur bloque l'interpréteur Javascript ou qu'il n'en possède pas...</p>
+        <h1>JavaScript est important!</h1>
+        <p>Il semble que votre navigateur bloque l'interpréteur Javascript ou qu'il n'en possède pas...</p>
       </div>
-  </noscript>
+    </noscript>
     <!-- HERO SECTION -->
     <section id="hero">
       <div class="content-wrap">
@@ -77,21 +82,22 @@
         <h3>Bilingual EN | FR</h3>
       </div>
       <!-- <div class="icones"> -->
-        <ul class="icones">
-          <li class="bulle">
-            <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
-          </li>
-          <li class="bulle">
-            <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
-                class="fa-brands fa-linkedin-in fa-xl"></i></a>
-          </li>
-          <li class="bulle">
-            <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-          </li>
-          <li class="bulle">
-            <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down fa-xl"></i></a>
-          </li>
-        </ul>
+      <ul class="icones">
+        <li class="bulle">
+          <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
+        </li>
+        <li class="bulle">
+          <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
+              class="fa-brands fa-linkedin-in fa-xl"></i></a>
+        </li>
+        <li class="bulle">
+          <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </li>
+        <li class="bulle">
+          <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i
+              class="fa-solid fa-file-arrow-down fa-xl"></i></a>
+        </li>
+      </ul>
       <!-- </div> -->
       <aside class="moving-text">
         <marquee>
@@ -107,15 +113,12 @@
         <h2>About</h2>
         <div class="wrap-about-me">
           <p class="wrap-about-me-p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            laudantium eum voluptatibus corporis blanditiis sequi dicta sed
-            asperiores odit quidem quos est in quas id explicabo fugiat illum
-            perspiciatis expedita officiis, ratione ut? Suscipit consequuntur
-            nam illum tenetur, vero rem repellendus, voluptates laudantium
-            laboriosam cum, corrupti labore officiis ea praesentium. Suscipit
-            consequuntur nam illum tenetur, vero rem repellendus, voluptates
-            laudantium laboriosam cum, corrupti labore officiis ea
-            praesentium.
+            Passionate about social justice and international cooperation, I naturally completed a <strong>Bachelor's degree in
+            Sociology</strong> and a <strong>Master's degree in Population and Development Sciences</strong> in Brussels. This educational path led me to work for <strong>5
+            years in the associative sector</strong> as a project and study manager. These great experiences made me realize that
+            it was time for me to add technical skills to my social knowledge. So I started a career change through a 15
+            months professional training as a <strong>Web Application Developer</strong>. Discover my new skills by browsing this
+            portfolio.
           </p>
           <img class="wrap-about-me-img" src="./assets/img/Photo Eléonore.jpg" logo="profile picture" />
         </div>
@@ -238,167 +241,6 @@
         <button id="left"><i class="fas fa-arrow-left fa-2xl"></i></button>
         <button id="right"><i class="fas fa-arrow-right fa-2xl"></i></i></button>
         <div class="box-timeline">
-          <!-- <div class="ligne timeline-section"></div> -->
-          <!-- <div class="timeline-item i1">
-            <a href="https://www.interface3.be/fr/formation/web-application-developer" target="_blank">
-              <div class="item-description">
-                <h3><time>2022</time>-<time>2023</time></h3>
-                <p>Web Application Developer Training</p>
-              </div>
-              <img class="img-carre" src="./assets/img/timeline/interface3.png" alt="Interface3's logo" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i2">
-            <a href="https://campus19.be" target="_blank">
-              <div class="item-description">
-                <h3>Summer <time>2022</time></h3>
-                <p>C Programming Bootcamp</p>
-              </div>
-              <img class="img-carre" src="./assets/img/timeline/s19noir.svg" alt="" />
-              <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="timeline-item i3">
-            <a href="https://www.facebook.com/Soralia.Mouvement/videos/637929034173028/" target="_blank">
-              <div class="item-description">
-                <h3>Conference <time>2022</time></h3>
-                <p>
-                  "Stop au statut de cohabitant.e ! 40 ans de combats féministes
-                  et syndicaux"
-                </p>
-              </div>
-              <img class="img-rect" src="./assets/img/timeline/conference2022.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i4">
-            <a href="https://www.soralia.be/wp-content/uploads/2021/12/Etude2021-Justice-fiscale.pdf" target="_blank">
-              <div class="item-description">
-                <h3>Research <time>2021</time></h3>
-                <p>"Une lecture féministe de la justice fiscale"</p>
-              </div>
-              <img src="./assets/img/timeline/etude2021.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i5">
-            <a href="https://www.facebook.com/events/260928288311233/?active_tab=about" target="_blank">
-              <div class="item-description">
-                <h3>Event <time>2020</time></h3>
-                <p>"Covid-19: les familles livrées à elles-mêmes?"</p>
-              </div>
-              <img class="img-rect" src="./assets/img/timeline/conference2020.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i6">
-            <a href="https://www.soralia.be/wp-content/uploads/2019/12/Etude2019_Du-chomage-au-CPAS_compressed.pdf"
-              target="_blank">
-              <div class="item-description">
-                <h3>Research <time>2019</time></h3>
-                <p>"Du chômage au CPAS: récits de femmes"</p>
-              </div>
-              <img src="./assets/img/timeline/etude2019.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i7">
-            <a href="https://www.soralia.be" target="_blank">
-              <div class="item-description">
-                <h3><time>2018</time>-<time>2022</time></h3>
-                <p>Project Manager and Research in non-profit organisation</p>
-              </div>
-              <img src="./assets/img/timeline/soralia.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i8">
-            <a href="https://www.sofelia.be" target="_blank">
-              <div class="item-description">
-                <h3>Conference <time>2018</time></h3>
-                <p>"Journée des Centres de Planning des FPS"</p>
-              </div>
-              <img src="./assets/img/timeline/conference2018.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i9">
-            <a href="https://www.sofelia.be" target="_blank">
-              <div class="item-description">
-                <h3><time>2018</time></h3>
-                <p>Mission leader in non-profit organisation</p>
-              </div>
-              <img src="./assets/img/timeline/sofelia.jpg" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i10">
-            <a href="https://www.interface3.be" target="_blank">
-              <div class="item-description">
-                <h3>December <time>2018</time></h3>
-                <p>Start & Code: coding introduction</p>
-              </div>
-              <img class="img-carre" src="./assets/img/timeline/interface3.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i11">
-            <a href="https://www.ulb.be" target="_blank">
-              <div class="item-description">
-                <h3>Diploma <time>2017</time></h3>
-                <p>Master in Population and Development Sciences</p>
-              </div>
-              <img class="img-carre" src="./assets/img/timeline/ulb.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i12">
-            <a href="https://www.sambhali.org" target="_blank">
-              <div class="item-description">
-                <h3>Internship <time>2016</time></h3>
-                <p>Cooperation and Teaching programs</p>
-              </div>
-              <img src="./assets/img/timeline/sambhali.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div>
-          <div class="timeline-item i13">
-            <a href="https://www.ulb.be" target="_blank">
-              <div class="item-description">
-                <h3>Diploma <time>2015</time></h3>
-                <p>Bachelor in Sociology and Anthropology</p>
-              </div>
-              <img class="img-carre" src="./assets/img/timeline/ulb.png" alt="" />
-            </a>
-            <svg class="timeline-card-svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M5 15h3v21H5V15zm1.5-2a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"></path>
-            </svg>
-          </div> -->
         </div>
       </div>
     </section>

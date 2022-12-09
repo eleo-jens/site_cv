@@ -2,8 +2,8 @@ const filters = document.querySelectorAll(".filter");
 
 filters.forEach(function (elem) {
   elem.addEventListener("click", (event) => {
-    console.log(event);
-    console.log(elem.id);
+    // console.log(event);
+    // console.log(elem.id);
     selectProjects(elem.id);
     toggleBold(elem, filters);
   });
@@ -11,7 +11,7 @@ filters.forEach(function (elem) {
 
 let selectProjects = function (category) {
   const galerie = document.querySelector("#galerie");
-  console.log(`J'ai cliqué sur ${category}`);
+  // console.log(`J'ai cliqué sur ${category}`);
   // all: display none;
   let toHide = document.getElementsByClassName("all");
   for (let i = 0; i < toHide.length; i++) {
