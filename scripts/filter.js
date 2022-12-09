@@ -10,6 +10,7 @@ filters.forEach(function (elem) {
 });
 
 let selectProjects = function (category) {
+  const galerie = document.querySelector("#galerie");
   console.log(`J'ai cliqué sur ${category}`);
   // all: display none;
   let toHide = document.getElementsByClassName("all");
@@ -20,6 +21,12 @@ let selectProjects = function (category) {
   let toShow = document.getElementsByClassName(category);
   for (let i = 0; i < toShow.length; i++) {
     toShow[i].style.display = "block";
+  }
+  if (document.getElementsByClassName(category).length <= 3){
+      galerie.style.overflowX = "hidden";
+  }
+  else {
+    galerie.style.overflowX = "scroll";
   }
 };
 
