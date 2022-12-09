@@ -143,6 +143,10 @@ header {
     cursor: pointer;
 }
 
+img.language {
+    width: 80%;
+}
+
 /* .toggles p {
     flex: 0 1 20%;
 } */
@@ -151,16 +155,17 @@ header {
     visibility: hidden;
 } */
 
-/* .flex-item.toggles {
+div.toggles {
     display: flex;
     justify-content: flex-end;
-} */
+    align-items: center;
+}
 
 /* .flex-item.toggles p {
     flex: 0 1 20%;
 } */
 
-header img {
+header img[alt="logo"] {
     height: 56px;
     max-width: 60px;
     margin-left: 20%;
