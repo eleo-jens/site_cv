@@ -33,6 +33,7 @@ const create_timeline = function (data) {
     a.appendChild(img);
     item.appendChild(a);
     item.appendChild(svg);
+    item.setAttribute("id", "i-" + i);
     background_timeline.appendChild(item);
   }
 };
@@ -88,13 +89,10 @@ const create_svg = function () {
 };
 
 //Faire bouger la timeline avec les fleches cliquables
-
 const background_section = document.querySelector("section#background");
 background_timeline.scrollLeft = 0;
 const left_arrow = document.querySelector("#left");
 const right_arrow = document.querySelector("#right");
-// const timeline_item = document.querySelector(".timeline-item");
-// console.log(timeline_item.offsetWidth);
 right_arrow.hidden = true;
 
 let width = background_timeline.offsetWidth - 100;
@@ -103,26 +101,28 @@ let count = 1;
 left_arrow.addEventListener("click", function () {
   right_arrow.hidden = false;
   background_timeline.scrollLeft -= width;
-  console.log(background_timeline.scrollLeft);
-  console.log(width * count)
-  count++;
-  if (background_timeline.scrollLeft == (width * count)){
+
+  if (document.getElementById("i-12").getBoundingClientRect().x > 100) {
     left_arrow.hidden = true;
+  }
+  else {
+    left_arrow.hidden = false;
   }
 });
 
 right_arrow.addEventListener("click", function () {
   background_timeline.scrollLeft += width;
-  if (background_timeline.scrollLeft == 0){
+
+  if (Math.ceil(background_timeline.scrollLeft) >= -1) {
     right_arrow.hidden = true;
   }
+  else {
+    right_arrow.hidden = false;
+  }
+  if (left_arrow.hidden === true) left_arrow.hidden = false;
+
 });
 
-background_section.addEventListener("scroll", function() {
+background_section.addEventListener("scroll", function () {
   console.log("je suis en focus sur la timeline");
-})
-
-// const timeline_item = document.querySelector(".timeline-item");
-// const item_width = timeline_item.offsetWidth;
-// const total_div_width = item_width * 7 + 
-// background_timeline.childElementCount
+});
