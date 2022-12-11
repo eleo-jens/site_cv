@@ -196,6 +196,7 @@ header img[alt="logo"] {
     font-family: 'Melburch Outline';
 }
 
+/* A garder ou supprimer */
 .moving-text {
     position: absolute;
     bottom: 6%;
@@ -206,9 +207,33 @@ header img[alt="logo"] {
     /* margin-top: 140px; */
 }
 
+/* A garder ou supprimer */
 marquee {
     margin: 7px;
     /* scrolldelay: 20; */
+}
+
+.marquee {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    background-color: pink;
+    overflow: hidden;
+    padding: 0.8rem;
+    bottom: 50px;
+    z-index: -1;
+}
+
+.marquee>p{
+    white-space: nowrap;
+    padding: 0 3rem;
+    animation: marquee 7000ms linear infinite;
+    font-weight: 500;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 .icones {

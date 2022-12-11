@@ -1,6 +1,6 @@
 const bulles = document.querySelectorAll(".bulle");
 
-if (bulles.style.display != "none"){
+if (bulles.display != "none"){
     //création d'une timeline de GreenSock, la timeline est un container à animations
     const timeline = gsap.timeline({paused:true});
     
