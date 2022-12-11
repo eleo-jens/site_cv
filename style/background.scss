@@ -57,3 +57,22 @@ body.dark {
 		background: linear-gradient(-45deg, purple, navy 90%);
 	}
 }
+
+body.dark header a, body.dark header nav {
+  background-color: #202020;
+  color:#f1f1f1;
+}
+
+body.dark .bulle {
+  background-color: #343434;
+}
+body.dark .bulle:hover {
+  background: #f1f1f1;
+}
+body.dark .bulle i {
+  color: #f1f1f1
+}
+body.dark .bulle:hover i {
+  color: #343434
+}
+
