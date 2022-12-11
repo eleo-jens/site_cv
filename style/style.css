@@ -131,7 +131,7 @@ header {
     display: flex;
     height: 55.99px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu li {
@@ -159,6 +159,7 @@ div.toggles {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 5%
 }
 
 /* .flex-item.toggles p {
@@ -995,6 +996,10 @@ div.button-container {
         height: 40px;
     }
 
+    header a img[alt="logo"]{
+            margin-left: 5%;
+    }
+
     section#hero aside.moving-text {
         font-size: smaller;
     }
@@ -1035,7 +1040,7 @@ div.button-container {
 
     section#projects div.flex-container {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     div#galerie {
