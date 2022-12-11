@@ -1,4 +1,4 @@
-let btn = document.querySelector("a#top");
+// btn = document.querySelector("a#top");
 
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
