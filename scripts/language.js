@@ -9,7 +9,7 @@ const menu_names = document.querySelectorAll(".menu li a");
 const hero_h1 = document.querySelector("#hero h1");
 const hero_h2 = document.querySelector("#hero h2");
 const hero_h3 = document.querySelector("#hero h3");
-const hero_marquee = document.querySelector("#hero marquee");
+const hero_marquee = document.querySelectorAll("#hero .marquee p");
 
 const about_h2 = document.querySelector("#about h2");
 const about_p = document.querySelector("#about .wrap-about-me-p");
@@ -88,7 +88,9 @@ const fill_content = function (data) {
     hero_h1.innerText = data.hero.h1;
     hero_h2.innerText = data.hero.h2;
     hero_h3.innerText = data.hero.h3;
-    hero_marquee.innerText = data.hero.marquee;
+    hero_marquee.forEach(function(p) {
+        p.innerText = data.hero.marquee;
+    });
 
     about_h2.innerText = data.about.h2;
     about_p.innerHTML = data.about.p;
