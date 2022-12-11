@@ -162,6 +162,16 @@ img.language {
     margin-right: 10%;
 }
 
+header img[alt="logo"] {
+    height: 56px;
+    max-width: 60px;
+    margin-left: 20%;
+}
+
+.icones.burger {
+    display: none;
+}
+
 /* .toggles p {
     flex: 0 1 20%;
 } */
@@ -173,12 +183,6 @@ img.language {
 /* .flex-item.toggles p {
     flex: 0 1 20%;
 } */
-
-header img[alt="logo"] {
-    height: 56px;
-    max-width: 60px;
-    margin-left: 20%;
-}
 
 /* Hero
 ------------------------------- */
@@ -850,6 +854,10 @@ div.button-container {
         height: 40px;
     }
 
+    header ul.menu li a {
+        font-size: 1rem;
+    }
+
     section {
         padding-top: 3%;
     }
@@ -1159,6 +1167,19 @@ div.button-container {
 }
 
 @media screen and (max-width: 577px) {
+
+    ul.icones {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 100px;
+    }
+
     .timeline-item {
         margin: 0;
         width: 250px;

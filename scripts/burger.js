@@ -9,6 +9,11 @@ const toggleNav = function () {
     burgerIcon.classList.toggle("active");
     navigation.classList.toggle("active");
     document.body.style.overflowY = "hidden";
+
+    
+
+
+
 };
 
 burgerIcon.addEventListener("click", toggleNav);
