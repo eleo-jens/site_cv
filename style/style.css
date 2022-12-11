@@ -1080,6 +1080,7 @@ div.button-container {
     .box-timeline {
         flex-direction: column;
         height: 70vh;
+        overflow-y: hidden;
     }
 
     .timeline-item {
