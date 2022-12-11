@@ -1174,16 +1174,16 @@ div.button-container {
 
     .burger {
         display: flex;
-        width: 250px;
+        width: 230px;
         justify-content: space-between;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 90px;
     }
 
     .timeline-item {
         margin: 0;
         width: 250px;
-        height: 150px;;
+        height: 150px;
     }
 
     .timeline-item p {
