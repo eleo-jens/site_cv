@@ -965,6 +965,10 @@ div.button-container {
 @media screen and (min-width:577px) and (max-width: 768px) {}
 
 @media screen and (max-width: 768px) {
+    section#hero>div.content-wrap {
+        padding-top: 0px;;
+    }
+    
     div.content-wrap {
         width: 90%;
     }

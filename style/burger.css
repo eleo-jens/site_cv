@@ -91,12 +91,12 @@ button.nav-toggler {
         flex-direction: column;
         text-align: left;
         justify-content: flex-start;
-        padding-top: 50px;
+        padding-top: 80px;
         margin: 0 auto;
     }
 
     .menu li {
-        margin-block: 40px;
+        margin-block: 15px;
     }
 
     nav.active {
