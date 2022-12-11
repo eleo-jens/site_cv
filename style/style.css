@@ -112,14 +112,8 @@ header {
     z-index: 10;
 }
 
-.flex-item-menu {
-    flex: 6 1 100px;
-    background-color: white;
-    /* border: solid 1px black; */
-    height: 56px;
-}
-
 .flex-item {
+    display: flex;
     flex: 1 1 100px;
     background-color: white;
     /* border: solid 1px black; */
@@ -127,8 +121,18 @@ header {
     height: 56px;
 }
 
+.flex-item-menu {
+    display: flex;
+    flex: 6 1 100px;
+    background-color: white;
+    /* border: solid 1px black; */
+    height: 56px;
+}
+
 .menu {
     display: flex;
+    flex: fit-content;
+    max-width: 80%;
     height: 55.99px;
     align-items: center;
     justify-content: space-between;
@@ -138,13 +142,24 @@ header {
     align-items: center;
 }
 
+div.toggles {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-right: 5%; */
+}
+
 .toggles {
     padding-left: 3rem;
     cursor: pointer;
 }
 
 img.language {
-    width: 80%;
+    /* width: 80%; */
+}
+
+.theme {
+    margin-right: 10%;
 }
 
 /* .toggles p {
@@ -154,13 +169,6 @@ img.language {
 /* .nav-toggler {
     visibility: hidden;
 } */
-
-div.toggles {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 5%
-}
 
 /* .flex-item.toggles p {
     flex: 0 1 20%;
@@ -913,13 +921,14 @@ div.button-container {
         width: 300px;
         margin-left: 0px;
         min-height: 115px;
+        margin: 0 auto;
     }
 
     .box-timeline:after {
         width: 2px;
         height: 70vh;
         margin-top: 0px;
-        margin-left: clamp(380px, 60%, 50%);
+        margin-left: clamp(520px, 80vw, 80%);
     }
 
 
@@ -1098,13 +1107,15 @@ div.button-container {
         width: 300px;
         margin-left: 0px;
         min-height: 115px;
+        margin: 0 auto;
     }
 
     .box-timeline:after {
-        width: 2px;
+        display: none;
+        /* width: 2px;
         height: 70vh;
         margin-top: 0px;
-        margin-left: clamp(380px, 60%, 60%);
+        margin-left: clamp(380px, 60%, 60%); */
     }
 
 
@@ -1144,5 +1155,31 @@ div.button-container {
 
     button#right, button#left {
         display: none;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .timeline-item {
+        margin: 0;
+        width: 250px;
+        height: 150px;;
+    }
+
+    .timeline-item p {
+        margin: 0;
+    }
+
+    div.timeline-item a img.img-carre {
+        max-width: 30px;
+        /* display: none; */
+    }
+
+    div.timeline-item a img.img-rect {
+        max-width: 60px;
+        /* display: none; */
+    }
+
+    div.timeline-item a img {
+        max-width: 60px;
     }
 }

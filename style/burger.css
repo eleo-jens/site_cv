@@ -59,6 +59,7 @@ button.nav-toggler {
         /* transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84); */
         transition: transform 350ms ease-out;
         background-color: aqua;
+        flex-direction: column;
     }
 
     .toggles {
@@ -72,8 +73,10 @@ button.nav-toggler {
     }
 
     div.toggles {
-        width: 100%;
+        width: 250px;
         justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 10%;
         /* margin-top: 5%;
         padding: 0; */
         /* margin-left: 24%; */
@@ -89,6 +92,7 @@ button.nav-toggler {
     nav ul.menu {
         display: flex;
         flex-direction: column;
+        flex: 0 350px;
         text-align: left;
         justify-content: flex-start;
         padding-top: 80px;
