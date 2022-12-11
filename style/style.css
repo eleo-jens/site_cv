@@ -168,7 +168,7 @@ header img[alt="logo"] {
     margin-left: 20%;
 }
 
-.icones.burger {
+.burger {
     display: none;
 }
 
@@ -982,6 +982,11 @@ div.button-container {
 @media screen and (min-width:577px) and (max-width: 768px) {}
 
 @media screen and (max-width: 768px) {
+
+    html {
+        scroll-behavior: unset;
+    }
+
     section#hero>div.content-wrap {
         padding-top: 0px;;
     }
@@ -1021,6 +1026,18 @@ div.button-container {
             margin-left: 5%;
     }
 
+    ul.icones {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 90px;
+    }
+
     section#hero aside.moving-text {
         font-size: smaller;
     }
@@ -1045,6 +1062,7 @@ div.button-container {
 
     .wrap-about-me-p {
         flex: 10;
+        padding-right: 0;
     }
 
     .wrap-about-me-img {
@@ -1088,6 +1106,10 @@ div.button-container {
     .flex-item-filter ul li {
         flex: 1 0 80px;
         /* text-align: center; */
+    }
+
+    .modal img#media {
+        max-width: 312px;
     }
 
     /* .box-timeline {
@@ -1168,7 +1190,10 @@ div.button-container {
 
 @media screen and (max-width: 577px) {
 
-    ul.icones {
+    section#hero h2 {
+        font-size: 1.8rem;
+    }
+    /* ul.icones {
         display: none;
     }
 
@@ -1178,6 +1203,14 @@ div.button-container {
         justify-content: space-between;
         margin: auto;
         margin-top: 90px;
+    } */
+/* 
+    .modal-container{
+        display: none;
+    } */
+
+    .modal .img#media  {
+        display: none;
     }
 
     .timeline-item {

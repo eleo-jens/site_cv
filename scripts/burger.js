@@ -3,7 +3,7 @@ const navigation = document.querySelector('nav');
 const menu_ul = document.querySelector('ul.menu');
 const menu_elem = document.querySelectorAll('ul.menu li');
 let btn = document.querySelector("a#top");
-console.log(menu_elem);
+// console.log(menu_elem);
 
 const toggleNav = function () {
     burgerIcon.classList.toggle("active");

@@ -1,5 +1,6 @@
 const language_toggle = document.querySelector(".language");
-console.log(language_toggle.classList);
+// console.log(language_toggle);
+// console.log(language_toggle.classList);
 
 const head_title = document.querySelector("head title");
 
@@ -44,22 +45,23 @@ language_toggle.addEventListener("click", function () {
     //         break;
     // }
 
+    // console.log(language_toggle.classList[2]);
 
     switch (language_toggle.classList[2]) {
         case "FR":
             language_toggle.src = "./assets/img/icons8-france-48.png";
             language_toggle.classList.remove("FR");
             language_toggle.classList.add("EN");
-            console.log("I speak english");
+            // console.log("I speak english");
             get_data("en");
             break;
         case "EN":
-            console.log(language_toggle.src);
+            // console.log(language_toggle.src);
             "/assets/img/icons8-great-britain-48.png"
             language_toggle.src = "/assets/img/icons8-great-britain-48.png";
             language_toggle.classList.remove("EN");
             language_toggle.classList.add("FR");
-            console.log("Je parle français");
+            // console.log("Je parle français");
             get_data("fr");
             break;
     }
@@ -67,7 +69,7 @@ language_toggle.addEventListener("click", function () {
 
 const get_data = function (lang) {
     url = './data/data_' + lang + '.json';
-    console.log(url);
+    // console.log(url);
     fetch(url)
         .then((response) => response.json())
         .then((jsonData) => {
@@ -76,7 +78,7 @@ const get_data = function (lang) {
 }
 
 const fill_content = function (data) {
-    console.log(data);
+    // console.log(data);
     head_title.innerText = data.head.title;
 
     for (let i = 0; i < menu_names.length; i++) {
@@ -105,7 +107,7 @@ const fill_content = function (data) {
             child.remove();
             child = background_timeline.firstElementChild;
         }
-        console.log(background_timeline);
+        // console.log(background_timeline);
         create_timeline(data);
     }
 
