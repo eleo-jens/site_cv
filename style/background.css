@@ -70,4 +70,8 @@ body.dark .bulle i {
 
 body.dark .bulle:hover i {
   color: #343434;
+}
+
+body.dark .line {
+  background: #f1f1f1;
 }/*# sourceMappingURL=background.css.map */
