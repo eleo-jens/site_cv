@@ -1080,7 +1080,13 @@ div.button-container {
     .box-timeline {
         flex-direction: column;
         height: 70vh;
-        overflow-y: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .box-timeline::-webkit-scrollbar {
+        display: none;
     }
 
     .timeline-item {
