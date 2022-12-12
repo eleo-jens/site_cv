@@ -222,6 +222,7 @@ marquee {
     padding: 0.8rem;
     bottom: 50px;
     z-index: -1;
+    width: 99vw;
 }
 
 .marquee>p{
@@ -1234,9 +1235,9 @@ div.button-container {
         display: none;
     } */
 
-    .modal .img#media  {
+    /* .modal .img#media  {
         display: none;
-    }
+    } */
 
     .timeline-item {
         margin: 0;
