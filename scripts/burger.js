@@ -10,9 +10,11 @@ const toggleNav = function () {
     navigation.classList.toggle("active");
     if(navigation.classList.contains("active")){
         document.body.style.overflowY = "hidden";
+        document.querySelector("a#top").visibility = "hidden";
     }
     else {
         document.body.style.overflowY = "scroll";
+        document.querySelector("a#top").visibility = "visible";
     }
     btn.classList.remove('show');
 };
