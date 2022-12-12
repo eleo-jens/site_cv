@@ -2,7 +2,7 @@ const language_toggle = document.querySelector(".language");
 // console.log(language_toggle);
 // console.log(language_toggle.classList);
 
-const head_title = document.querySelector("head title");
+// const head_title = document.querySelector("head title");
 
 const menu_names = document.querySelectorAll(".menu li a");
 
@@ -57,8 +57,7 @@ language_toggle.addEventListener("click", function () {
             break;
         case "EN":
             // console.log(language_toggle.src);
-            "/assets/img/icons8-great-britain-48.png"
-            language_toggle.src = "/assets/img/icons8-great-britain-48.png";
+            language_toggle.src = "./assets/img/icons8-great-britain-48.png";
             language_toggle.classList.remove("EN");
             language_toggle.classList.add("FR");
             // console.log("Je parle français");
@@ -79,7 +78,7 @@ const get_data = function (lang) {
 
 const fill_content = function (data) {
     // console.log(data);
-    head_title.innerText = data.head.title;
+    // head_title.innerText = data.head.title;
 
     for (let i = 0; i < menu_names.length; i++) {
         menu_names[i].innerText = data.menu[i];
