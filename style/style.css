@@ -207,12 +207,6 @@ header img[alt="logo"] {
     /* margin-top: 140px; */
 }
 
-/* A garder ou supprimer */
-marquee {
-    margin: 7px;
-    /* scrolldelay: 20; */
-}
-
 .marquee {
     position: absolute;
     display: flex;
@@ -222,7 +216,7 @@ marquee {
     padding: 0.8rem;
     bottom: 50px;
     z-index: -1;
-    width: 99vw;
+    width: 100vw;
 }
 
 .marquee>p{
