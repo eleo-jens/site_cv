@@ -42,13 +42,13 @@ function get_language_json() {
   let url = "";
   switch (language) {
     case "FR":
-      url = "../data/portfolio_fr.json";
+      url = "./data/portfolio_fr.json";
       break;
     case "EN":
-      url = "../data/portfolio_en.json";
+      url = "./data/portfolio_en.json";
       break;
     default:
-      url = "../data/portfolio_en.json";
+      url = "./data/portfolio_en.json";
       break;
   }
   return url;

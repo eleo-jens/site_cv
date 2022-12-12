@@ -9,7 +9,7 @@
             "website": "https://hackathon22.interface3.be/Su_ITs_You/",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
+                    "src" : "./assets/img/suitsyou_big.png",
                     "alt" : "Picture of my hackathon projects"
                 }
             ]
@@ -23,7 +23,7 @@
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
-                    "src" : "../assets/img/css_linkedin.png",
+                    "src" : "./assets/img/css_linkedin.png",
                     "alt" : "Picture of my CV Website project"
                 }
             ]
@@ -37,7 +37,7 @@
             "website": "",
             "media": [
                 { 
-                    "src" : "../assets/img/wadflix_600.png",
+                    "src" : "./assets/img/wadflix_600.png",
                     "alt" : "Picture of my netflix project"
                 }
             ]
@@ -51,7 +51,7 @@
             "website": "",
             "media": [
                 { 
-                    "src" : "../assets/img/suitsyou_big.png",
+                    "src" : "./assets/img/suitsyou_big.png",
                     "alt" : "Picture of my hackathon projects"
                 }
             ]
