@@ -55,6 +55,21 @@
                     "alt" : "Picture of my hackathon projects"
                 }
             ]
+        },
+        {
+            "id" : "4",
+            "title": "Angular Introduction",
+            "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
+            "tag": ["Angular", "JavaScript"],
+            "github": "https://github.com/eleo-jens/angular",
+            "website": "",
+            "media": [
+                { 
+                    "src" : "./assets/img/suitsyou_big.png",
+                    "alt" : "Picture of my hackathon projects"
+                }
+            ]
         }  
+
     ]
 }

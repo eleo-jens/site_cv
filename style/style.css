@@ -506,6 +506,7 @@ img#media {
 
 #tag {
     display: flex;
+    margin-top: 10%;
 }
 
 #tag p {

@@ -36,6 +36,12 @@ function toggleModal() {
         fillContent(jsonData, id);
       });
   }
+  if (modalContainer.classList.contains("active")){
+    document.body.style.overflowY = "hidden";
+  }
+  else {
+    document.body.style.overflowY = "scroll";
+  }
 }
 
 function get_language_json() {
@@ -56,12 +62,14 @@ function get_language_json() {
 
 function fillContent(data, id) {
   try {
+    // console.log(data.projects[id].id);
     if (id == data.projects[id].id) {
       let h2 = document.getElementById("project-title");
       let description = document.getElementById("description");
       let tag = document.getElementById("tag");
       let github = document.getElementById("github");
       let website = document.getElementById("website");
+      // console.log(website);
       let media = document.getElementById("media");
       let media_url = document.getElementById("media-url");
 
@@ -81,6 +89,7 @@ function fillContent(data, id) {
         }
       }
 
+      // console.log(data.projects[id].website);
       if (data.projects[id].website != "") {
         website.setAttribute("href", data.projects[id].website);
         website.setAttribute("target", "_blank");

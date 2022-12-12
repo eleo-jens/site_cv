@@ -55,6 +55,20 @@
                     "alt" : "Photo de mes démonstrations Angular"
                 }
             ]
+        },
+        {
+            "id" : "4",
+            "title": "Introduction à Angular",
+            "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
+            "tag": ["Angular", "JavaScript"],
+            "github": "https://github.com/eleo-jens/angular",
+            "website": "",
+            "media": [
+                { 
+                    "src" : "./assets/img/suitsyou_big.png",
+                    "alt" : "Photo de mes démonstrations Angular"
+                }
+            ]
         }  
     ]
 }
