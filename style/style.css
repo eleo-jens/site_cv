@@ -262,7 +262,7 @@ header img[alt="logo"] {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     cursor: pointer;
     position: relative;
 }
@@ -276,11 +276,12 @@ header img[alt="logo"] {
 }
 
 .bulle:hover {
-    background-color: #343434;
+    /* background-color: #343434; */
 }
 
 .bulle:hover i {
-    color: white;
+    /* color: white; */
+    color: #797979; 
 }
 
 /*About
