@@ -275,9 +275,9 @@ header img[alt="logo"] {
     transition: color 2s ease-out;
 }
 
-.bulle:hover {
+/* .bulle:hover { */
     /* background-color: #343434; */
-}
+/* } */
 
 .bulle:hover i {
     /* color: white; */
