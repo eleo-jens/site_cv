@@ -1242,6 +1242,10 @@ div.button-container>a.button {
         /* display: none; 
     }*/
 
+    .box-timeline {
+        margin-left: -20%;
+    }
+
     div.timeline-item a img.img-rect {
         max-width: 60px;
         /* display: none; */
