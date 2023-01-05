@@ -49,7 +49,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h1,
@@ -519,9 +519,9 @@ img#media {
     bottom: 20px;
 }
 
-.button-52:nth-child(2) {
+/* .button-52:nth-child(2) {
     margin-left: 20px;
-}
+} */
 
 /* Skills
 ------------------------------- */
@@ -718,45 +718,18 @@ div.button-container {
     justify-content: center;
 }
 
-/* CSS */
-.button-52 {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+
+.button {
+    border: black 1px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-right: 20px;
 }
 
-.button-52:after {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
+.button:hover {
+    background-color: aquamarine;
+    border: aquamarine 1px solid;
 }
-
-.button-52:hover:after {
-    top: 0px;
-    left: 0px;
-}
-
-@media (min-width: 769px) {
-    .button-52 {
-        padding: 13px 50px 13px;
-    }
-}
-
 
 
 /* MEDIA QUERIES *************
@@ -930,14 +903,6 @@ div.button-container {
     .modal h2 {
         font-size: 1rem;
         margin-top: 0;
-    }
-
-    .button-52 {
-        padding: 10px 30px 10px;
-    }
-
-    .button-52 {
-        font-size: smaller;
     }
 
     .button-wrap {
@@ -1133,8 +1098,27 @@ div.button-container {
         /* text-align: center; */
     }
 
+    div.modal {
+        height: 80vh;
+    }
+
+    a#media-url {
+        display: inline-flex;
+    }
+
     .modal img#media {
-        max-width: 312px;
+        max-width: 80%;
+    }
+
+    .modal-content {
+        flex-direction: column;
+    }
+
+    div.button-wrap {
+        display: inline-block;
+        margin-top: 20%;
+        margin-right: 20%;
+        position: relative;
     }
 
     /* .box-timeline {
@@ -1229,15 +1213,17 @@ div.button-container {
         margin: auto;
         margin-top: 90px;
     } */
-/* 
-    .modal-container{
-        display: none;
-    } */
 
-    /* .modal .img#media  {
+    .modal img#media {
         display: none;
-    } */
+    }
 
+    .button {
+        display: block;
+        margin-bottom: 10%;
+    }
+    
+    /* 
     .timeline-item {
         margin: 0;
         width: 250px;
@@ -1250,8 +1236,8 @@ div.button-container {
 
     div.timeline-item a img.img-carre {
         max-width: 30px;
-        /* display: none; */
-    }
+        /* display: none; 
+    }*/
 
     div.timeline-item a img.img-rect {
         max-width: 60px;
