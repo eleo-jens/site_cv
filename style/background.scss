@@ -63,17 +63,22 @@ body.dark header a, body.dark header nav {
   color:#f1f1f1;
 }
 
-body.dark .bulle {
-  background-color: #343434;
-}
-body.dark .bulle:hover {
-  background: #f1f1f1;
-}
+// body.dark .bulle {
+  // background-color: #343434;
+// }
+
+// body.dark .bulle:hover {
+  // background: #f1f1f1;
+// }
+
 body.dark .bulle i {
-  color: #f1f1f1
+  // color: #f1f1f1;
+  color: #343434;
 }
+
 body.dark .bulle:hover i {
-  color: #343434
+  // color: #343434;
+  color: #f1f1f1; 
 }
 
 body.dark .line {

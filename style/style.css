@@ -719,11 +719,14 @@ div.button-container {
 }
 
 
+div.button-container>a.button {
+    margin-right: 20px;
+}
+
 .button {
     border: black 1px solid;
     border-radius: 20px;
     padding: 10px 30px;
-    margin-right: 20px;
 }
 
 .button:hover {
