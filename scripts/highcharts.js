@@ -1,7 +1,7 @@
 Highcharts.chart('container', {
     chart: {
         type: 'packedbubble',
-        height: '70%'
+        height: '50%'
     },
     title: {
         text: '',
@@ -156,7 +156,7 @@ Highcharts.chart('container', {
             chartOptions: {
                 chart: {
                     className: 'small-chart', 
-                    height: 350
+                    height: '100%'
                 }
             }
         }]
