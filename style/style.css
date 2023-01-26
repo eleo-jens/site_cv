@@ -723,6 +723,10 @@ div.button-container>a.button {
     margin-right: 20px;
 }
 
+.contact-wrap div.button-container>a.button {
+    margin-right: 0;
+}
+
 .button {
     border: black 1px solid;
     border-radius: 20px;
