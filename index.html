@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./style/burger.css" />
   <link rel="stylesheet" href="./style/background.css">
   <link rel="stylesheet" href="./style/top.css">
+  <link rel="stylesheet" href="./style/highchart.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <script src="https://kit.fontawesome.com/5bb1968648.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
@@ -29,6 +30,11 @@
   <script type="text/JavaScript" src="./scripts/theme.js" defer></script>
   <script type="text/JavaScript" src="./scripts/animation.js" defer></script>
   <script type="text/JavaScript" src="./scripts/scrollTop.js" defer></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="./scripts/highcharts.js" defer></script>
   <script type="module" src="./scripts/skills.js" defer></script>
 </head>
 
@@ -251,9 +257,14 @@
     <section id="skills">
       <div class="content-wrap">
         <h2>Skills</h2>
-        <div id="graph-container">
+        <!-- VERSION CHART.JS -->
+        <!-- <div id="graph-container">
           <canvas id="myGraph"></canvas>
-        </div>
+        </div> -->
+        <!-- VERSION HIGHCHARTS.JS -->
+        <figure class="highcharts-figure">
+          <div id="container"></div>
+        </figure>
       </div>
     </section>
 
