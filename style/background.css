@@ -60,6 +60,11 @@ body.dark .bulle {
   background-color: #343434;
 }
 
+
+body.light .bulle {
+  background-color: white;
+}
+
 body.dark .bulle:hover {
   background: #f1f1f1;
 }
