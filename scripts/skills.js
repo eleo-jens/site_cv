@@ -14,8 +14,8 @@ const data = {
     'Symfony'
   ],
   datasets: [{
-    label: 'My First Dataset',
-    data: [14, 15, 12, 10, 13, 5, 0, 0],
+    label: 'IT Skills %',
+    data: [70, 75, 60, 50, 50, 30, 60, 0],
     backgroundColor: [
       'rgb(255, 99, 132)',
       'rgb(75, 192, 192)',
