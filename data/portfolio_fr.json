@@ -58,17 +58,17 @@
         },
         {
             "id" : "4",
-            "title": "Introduction à Angular",
-            "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
-            "tag": ["Angular", "JavaScript"],
-            "github": "https://github.com/eleo-jens/angular",
-            "website": "",
+            "title": "PixelArt en JS",
+            "description" : "Un pixel art simple codé en JavaScript pour apprendre à manipuler le DOM et les couleurs.",
+            "tag": ["JavaScript"],
+            "github": "https://github.com/eleo-jens/pixelart_js",
+            "website": "https://eleo-jens.github.io/pixelart_js/",
             "media": [
                 { 
-                    "src" : "./assets/img/suitsyou_big.png",
-                    "alt" : "Photo de mes démonstrations Angular"
+                    "src" : "./assets/img/pixelart.png",
+                    "alt" : "Photo de mon projet pixel art"
                 }
             ]
-        }  
+        } 
     ]
 }
