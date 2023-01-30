@@ -209,6 +209,7 @@
             "Collaborons ensemble."
         ],
         "me": "./assets/img/contact.svg",
-        "cv" : "Téléchargez mon CV"
+        "cv" : "Téléchargez mon CV", 
+        "doc" : "./assets/doc/CV_Eleonore_Stultjens_FR_en_ligne.pdf"
     }
 }

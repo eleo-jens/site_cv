@@ -36,6 +36,14 @@
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   <script src="./scripts/highcharts.js" defer></script>
   <script type="module" src="./scripts/skills.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
+  <!-- <style>
+    #vanta-canvas {
+      width: 100%;
+      height: 80vh;
+    }
+  </style> -->
 </head>
 
 <body class="light">
@@ -46,7 +54,7 @@
   </svg>
   <!-- HEADER AND NAVIGATION -->
   <header>
-    <a class="flex-item" href="#"><img src="./assets/img/logoele.png" alt="logo"/></a>
+    <a class="flex-item" href="#"><img src="./assets/img/logoele.png" alt="logo" /></a>
     <nav class="flex-item-menu">
       <ul class="menu">
         <li><a href="#about">About</a></li>
@@ -55,32 +63,32 @@
         <li><a href="#background">Background</a></li>
         <li><a href="#contact">Contact</a></li>
         <!-- <div class="flex-item toggles"> -->
-        </ul>
-        <div class="toggles">
-          <!-- <li> -->
-            <!-- <p class="language toggles">FR</p> -->
-            <img class="language toggles EN" src="./assets/img/icons8-france-48.png">
-          <!-- </li>
+      </ul>
+      <div class="toggles">
+        <!-- <li> -->
+        <!-- <p class="language toggles">FR</p> -->
+        <img class="language toggles EN" src="./assets/img/icons8-france-48.png">
+        <!-- </li>
           <li> -->
-            <p class="theme toggles"><i class="fa-solid fa-moon fa-xl"></i></p>
-          <!-- </li> -->
-        </div>
-        <ul class="burger">
-          <li>
-            <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
-                class="fa-brands fa-linkedin-in fa-xl"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-          </li>
-          <li>
-            <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i
-                class="fa-solid fa-file-arrow-down fa-xl"></i></a>
-          </li>
-        </ul>
+        <p class="theme toggles"><i class="fa-solid fa-moon fa-xl"></i></p>
+        <!-- </li> -->
+      </div>
+      <ul class="burger">
+        <li>
+          <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
+              class="fa-brands fa-linkedin-in fa-xl"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </li>
+        <li>
+          <a class="cv" href="./assets/doc/CV_Eleonore_Stultjens_EN_Online.pdf" target="_blank"><i
+              class="fa-solid fa-file-arrow-down fa-xl"></i></a>
+        </li>
+      </ul>
     </nav>
 
     <button class="nav-toggler" type="button" aria-label="toggle curtain navigation">
@@ -101,6 +109,21 @@
     <!-- HERO SECTION -->
     <section id="hero">
       <div class="content-wrap">
+        <div id="vanta-canvas"></div>
+        <script>VANTA.HALO({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            backgroundColor: 0x20202,
+            amplitudeFactor: 1.50,
+            xOffset: 0.06,
+            yOffset: -0.09,
+            size: 0.70
+          })
+        </script>
         <h1>Eléonore Stultjens</h1>
         <h2>Junior Web Developer</h2>
         <h3>Bilingual EN | FR</h3>
@@ -117,7 +140,7 @@
           <a href="https://github.com/eleo-jens/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
         </li>
         <li class="bulle">
-          <a href="./assets/doc/English-CV-2022.pdf" target="_blank"><i
+          <a class="cv" href="./assets/doc/CV_Eleonore_Stultjens_EN_Online.pdf" target="_blank"><i
               class="fa-solid fa-file-arrow-down fa-xl"></i></a>
         </li>
       </ul>
@@ -292,7 +315,7 @@
           <a class="rotate" href="mailto:eleonore.jens@gmail.com" taget="_blank"><img
               src="./assets/img/contact.mesvg.svg" /></a>
           <div class="button-container">
-            <a href="./assets/doc/English-CV-2022.pdf" target="_blank" class="button" download>Download my CV</a>
+            <a href="./assets/doc/CV_Eleonore_Stultjens_EN_Online.pdf" target="_blank" class="button" download>Download my CV</a>
           </div>
         </div>
       </div>

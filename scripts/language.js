@@ -6,6 +6,9 @@ const language_toggle = document.querySelector(".language");
 
 const menu_names = document.querySelectorAll(".menu li a");
 
+const icone_cv = document.querySelector("ul.icones a.cv");
+const burger_cv = document.querySelector("ul.burger a.cv");
+
 const hero_h1 = document.querySelector("#hero h1");
 const hero_h2 = document.querySelector("#hero h2");
 const hero_h3 = document.querySelector("#hero h3");
@@ -84,6 +87,9 @@ const fill_content = function (data) {
         menu_names[i].innerText = data.menu[i];
     }
 
+    icone_cv.setAttribute("href", data.contact.doc);
+    burger_cv.setAttribute("href", data.contact.doc);
+
     hero_h1.innerText = data.hero.h1;
     hero_h2.innerText = data.hero.h2;
     hero_h3.innerText = data.hero.h3;
@@ -115,7 +121,8 @@ const fill_content = function (data) {
     contact_p1.innerText = data.contact.p[0];
     contact_p2.innerText = data.contact.p[1];
     contact_me.src = data.contact.me,
-        contact_cv.innerText = data.contact.cv;
+    contact_cv.innerText = data.contact.cv;
+    contact_cv.setAttribute("href", data.contact.doc);
 
     for (let i = 0; i < projects_galerie_h3.length; i++) {
         projects_galerie_h3[i].innerText = data.projects.galerie.h3[i];
