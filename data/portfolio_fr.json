@@ -69,6 +69,20 @@
                     "alt" : "Photo de mon projet pixel art"
                 }
             ]
+        },
+        {
+            "id" : "5",
+            "title": "Formulaire JS",
+            "description" : "Une épreuve Javascript de manipulation du DOM: création d'une partie enfant et visualisation d'une famille nucléaire.",
+            "tag": ["JavaScript"],
+            "github": "https://github.com/eleo-jens/JS_exam",
+            "website": "https://eleo-jens.github.io/JS_exam/",
+            "media": [
+                { 
+                    "src" : "./assets/img/epreuvejsfin.png",
+                    "alt" : "Photo d'une épreuve JavaScript"
+                }
+            ]
         } 
     ]
 }

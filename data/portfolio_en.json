@@ -69,7 +69,21 @@
                     "alt" : "Picture of my pixelart project"
                 }
             ]
-        }  
+        },
+        {
+            "id" : "5",
+            "title": "JS Form",
+            "description" : "A Javascript test of DOM manipulation: creation of a child part and visualization of a nuclear family.",
+            "tag": ["JavaScript"],
+            "github": "https://github.com/eleo-jens/JS_exam",
+            "website": "https://eleo-jens.github.io/JS_exam/",
+            "media": [
+                { 
+                    "src" : "./assets/img/epreuvejsfin.png",
+                    "alt" : "Picture of my JavaScript exam"
+                }
+            ]
+        } 
 
     ]
 }
