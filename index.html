@@ -21,21 +21,21 @@
   <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script type="text/JavaScript" src="./scripts/burger.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/filter.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/timeline.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/language.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/modal.js" defer></script>
-  <!-- <script type="text/JavaScript" src="./scripts/reponsive_gallery.js" defer></script> -->
-  <script type="text/JavaScript" src="./scripts/theme.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/animation.js" defer></script>
-  <script type="text/JavaScript" src="./scripts/scrollTop.js" defer></script>
+  <script src="./scripts/burger.js" defer></script>
+  <script src="./scripts/filter.js" defer></script>
+  <script src="./scripts/timeline.js" defer></script>
+  <script src="./scripts/language.js" defer></script>
+  <script src="./scripts/modal.js" defer></script>
+  <!-- <script src="./scripts/reponsive_gallery.js" defer></script> -->
+  <script src="./scripts/theme.js" defer></script>
+  <script src="./scripts/animation.js" defer></script>
+  <script src="./scripts/scrollTop.js" defer></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/highcharts-more.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   <script src="./scripts/highcharts.js" defer></script>
-  <script type="module" src="./scripts/skills.js" defer></script>
+  <script src="./scripts/skills.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
   <!-- <style>
@@ -67,7 +67,7 @@
       <div class="toggles">
         <!-- <li> -->
         <!-- <p class="language toggles">FR</p> -->
-        <img class="language toggles EN" src="./assets/img/icons8-france-48.png">
+        <img class="language toggles EN" src="./assets/img/icons8-france-48.png" alt="language icon">
         <!-- </li>
           <li> -->
         <p class="theme toggles"><i class="fa-solid fa-moon fa-xl"></i></p>
@@ -75,7 +75,7 @@
       </div>
       <ul class="burger">
         <li>
-          <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
+          <a href="mailto:eleonore.jens@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
@@ -130,7 +130,7 @@
       </div>
       <ul class="icones">
         <li class="bulle">
-          <a href="mailto:eleonore.jens@gmail.com" taget="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
+          <a href="mailto:eleonore.jens@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-xl"></i></a>
         </li>
         <li class="bulle">
           <a href="https://www.linkedin.com/in/eleonore-stultjens/" target="_blank"><i
@@ -173,7 +173,7 @@
             browsing this
             portfolio.
           </p>
-          <img class="wrap-about-me-img" src="./assets/img/Photo Eléonore.jpg" logo="profile picture" />
+          <img class="wrap-about-me-img" src="./assets/img/Photo Eléonore.jpg" alt="profile picture" />
         </div>
         <aside class="women-api">
           <button>Discover a great woman</button>
@@ -207,19 +207,19 @@
       <div class="overlay modal-trigger"></div>
       <div class="modal">
         <button class="close-modal modal-trigger">X</button>
-        <h2 id="project-title"></h2>
+        <h2 id="project-title">Title</h2>
         <div class="modal-content">
           <div class="description-container">
             <p id="description">
             </p>
             <div id="tag"></div>
             <div class="button-wrap">
-              <a id="github" target="_blank" class="button">Github</a>
-              <a id="website" tagret="_blank" class="button">Website</a>
+              <a id="github" target="_blank" class="button" href="#">Github</a>
+              <a id="website" target="_blank" class="button" href="#">Website</a>
             </div>
           </div>
           <a id="media-url" target="_blank">
-            <img id="media" />
+            <img id="media" src="" alt="project image"/>
           </a>
         </div>
       </div>
@@ -302,7 +302,7 @@
       <div class="content-wrap">
         <h2>Background</h2>
         <button id="left"><i class="fas fa-arrow-left fa-2xl"></i></button>
-        <button id="right"><i class="fas fa-arrow-right fa-2xl"></i></i></button>
+        <button id="right"><i class="fas fa-arrow-right fa-2xl"></i></button>
         <div class="box-timeline">
         </div>
       </div>
@@ -318,8 +318,8 @@
             I’m currently looking for new opportunities.
           </p>
           <p>Let’s get in touch to collaborate together.</p>
-          <a class="rotate" href="mailto:eleonore.jens@gmail.com" taget="_blank"><img
-              src="./assets/img/contact.mesvg.svg" /></a>
+          <a class="rotate" href="mailto:eleonore.jens@gmail.com" target="_blank"><img
+              src="./assets/img/contact.mesvg.svg" alt="contact me"/></a>
           <div class="button-container">
             <a href="./assets/doc/CV_Eleonore_Stultjens_EN_Online.pdf" target="_blank" class="button" download>Download my CV</a>
           </div>
