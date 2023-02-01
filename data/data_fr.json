@@ -13,7 +13,7 @@
         "h1": "Eléonore Stultjens",
         "h2": "Développeuse Web Junior",
         "h3": "Bilingue FR | EN",
-        "marquee": "Actuellement à la recherche d'un stage de 8 semaines de Web Development d'avril 2023 à juillet 2023."
+        "marquee": "Actuellement à la recherche d'un stage de 8 semaines de Web Development du 17 avril 2023 au 9 juin 2023."
     },
     "about": {
         "h2": "A Propos",
@@ -26,7 +26,7 @@
         "galerie": {
             "h3" : ["SuITs You",
             "WadFlix",
-            "Mon Portfolio",
+            "Portfolio",
             "Formulaire",
             "Angular",
             "PixelArt",

@@ -18,7 +18,6 @@
   for (let i = 0; i < projectItems.length; i++) {
     projectItems[i].addEventListener("click", function (event) {
       id = this.id;
-      console.log(this.id);
     });
   }
 
@@ -73,9 +72,20 @@
         let tag = document.getElementById("tag");
         let github = document.getElementById("github");
         let website = document.getElementById("website");
-        // console.log(website);
         let media = document.getElementById("media");
         let media_url = document.getElementById("media-url");
+
+
+        console.log(data.projects[id].website);
+        if (data.projects[id].website != "") {
+          website.style.display = "inline";
+          website.setAttribute("href", data.projects[id].website);
+          website.setAttribute("target", "_blank");
+          media_url.setAttribute("href", data.projects[id].website);
+        } else {
+          website.style.display = "none";
+          media_url.setAttribute("href", data.projects[id].github);
+        }
 
         h2.innerText = data.projects[id].title;
         description.innerText = data.projects[id].description;
@@ -94,14 +104,7 @@
         }
 
         // console.log(data.projects[id].website);
-        if (data.projects[id].website != "") {
-          website.setAttribute("href", data.projects[id].website);
-          website.setAttribute("target", "_blank");
-          media_url.setAttribute("href", data.projects[id].website);
-        } else {
-          website.style.display = "none";
-          media_url.setAttribute("href", data.projects[id].github);
-        }
+
       }
     } catch (error) {
       console.log(error + ": Not corresponding project id");

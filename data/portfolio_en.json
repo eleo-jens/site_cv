@@ -31,7 +31,7 @@
         {
             "id" : "2",
             "title": "My Portfolio",
-            "description" : "The website your are navigating right now is a school project that allowed me to display my different projets, my professionnal backgrounds and my web developer skills. This website is entirely coded with trio HTML/CSS/JavaScript.",
+            "description" : "The website your are navigating right now is a school project that allowed me to display my different projets, my professional background and my web developer skills. This website is entirely coded with the web trio HTML/CSS/JavaScript.",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/site_cv",
             "website": "http://www.if3projets.net/wad22/eleonore/",

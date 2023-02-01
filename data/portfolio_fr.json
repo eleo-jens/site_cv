@@ -32,7 +32,7 @@
         {
             "id" : "2",
             "title": "Mon Portfolio",
-            "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire qui m'a permis de présenter mes différents projets, mon parcours professionnel et mes compétences de développeuse web. Ce site est entièrement codé en trio HTML/CSS/JavaScript.",
+            "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire permettant de présenter mes différents projets, mon parcours professionnel et mes compétences de développeuse web. Ce site est entièrement codé avec le trio HTML/CSS/JavaScript.",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/site_cv",
             "website": "http://www.if3projets.net/wad22/eleonore/",
@@ -59,7 +59,7 @@
         }, 
         {
             "id" : "4",
-            "title": "Introduction à Angular",
+            "title": "Introduction Angular",
             "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
             "tag": ["Angular", "JavaScript"],
             "github": "https://github.com/eleo-jens/angular",
