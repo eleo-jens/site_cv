@@ -18,7 +18,7 @@
         {
             "id" : "1",
             "title": "Wadflix",
-            "description" : "Une application web sur le thème du cinéma, codée pour un projet scolaire en PHP. Incluant les concepts suivants : MasterPage, AJAX, Session, Requêtes de base de données.",
+            "description" : "Une application web sur le thème du cinéma, codée pour un projet scolaire en PHP. Incluant les concepts suivants : MasterPage, AJAX, Session, Requêtes de base de données: CRUD.",
             "tag": ["PHP", "SQL", "JavaScript"],
             "github": "https://github.com/eleo-jens/siteFilmDB",
             "website": "",
@@ -32,7 +32,7 @@
         {
             "id" : "2",
             "title": "Mon Portfolio",
-            "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire permettant de présenter mes différents projets, mon parcours professionnel et mes compétences de développeuse web. Ce site est entièrement codé avec le trio HTML/CSS/JavaScript.",
+            "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire qui m'a permis de présenter mes différents projets, mon parcours professionnel et mes compétences de développeur web. Ce site est entièrement codé avec le trio web HTML/CSS/JavaScript. Incluant des modes bilingues et light/dark, la génération d'une ligne de temps et la création de filtre de projet en vanilla JS ainsi que l'intégration de la bibliothèque Highchart.",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/site_cv",
             "website": "http://www.if3projets.net/wad22/eleonore/",

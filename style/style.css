@@ -377,6 +377,14 @@ section#projects h3 {
     margin-right: 0%;
 }
 
+.project-item img.jsform {
+    object-position: left top;
+}
+
+.project-item img.pixelart {
+    object-position: 47%;
+}
+
 section#projects img {
     object-fit: cover;
     height: 100%;
@@ -550,7 +558,7 @@ img#media {
     left: 0;
     right: 0;
     height: 2px;
-    border: 2px solid #343434;
+    border: 1px solid #343434;
     width: 1080px;
     margin: 0 auto;
     margin-top: 270px;
