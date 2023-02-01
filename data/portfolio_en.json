@@ -16,20 +16,6 @@
         },
         {
             "id" : "1",
-            "title": "CV Website",
-            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
-            "tag": ["CSS/Html"],
-            "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
-            "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
-            "media": [
-                { 
-                    "src" : "./assets/img/css_linkedin.png",
-                    "alt" : "Picture of my CV Website project"
-                }
-            ]
-        }, 
-        {
-            "id" : "2",
             "title": "Wadflix",
             "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests.",
             "tag": ["PHP", "SQL", "JavaScript"],
@@ -43,7 +29,35 @@
             ]
         },
         {
+            "id" : "2",
+            "title": "My Portfolio",
+            "description" : "The website your are navigating right now is a school project that allowed me to display my different projets, my professionnal backgrounds and my web developer skills. This website is entirely coded with trio HTML/CSS/JavaScript.",
+            "tag": ["JavaScript", "CSS/Html"],
+            "github": "https://github.com/eleo-jens/site_cv",
+            "website": "http://www.if3projets.net/wad22/eleonore/",
+            "media": [
+                { 
+                    "src" : "./assets/img/portfolio.png",
+                    "alt" : "Picture of my portfolio"
+                }
+            ]
+        }, 
+        {
             "id" : "3",
+            "title": "JS Form",
+            "description" : "A Javascript test of DOM manipulation: creation of a child part and visualization of a nuclear family.",
+            "tag": ["JavaScript"],
+            "github": "https://github.com/eleo-jens/JS_exam",
+            "website": "https://eleo-jens.github.io/JS_exam/",
+            "media": [
+                { 
+                    "src" : "./assets/img/epreuvejsfin.png",
+                    "alt" : "Picture of my JavaScript exam"
+                }
+            ]
+        }, 
+        {
+            "id" : "4",
             "title": "Angular Introduction",
             "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
             "tag": ["Angular", "JavaScript"],
@@ -57,7 +71,7 @@
             ]
         },
         {
-            "id" : "4",
+            "id" : "5",
             "title": "PixelArt in JS",
             "description" : "A simple pixel art coded in JavaScript to learn how to manipulate the DOM and colors.",
             "tag": ["JavaScript"],
@@ -71,19 +85,18 @@
             ]
         },
         {
-            "id" : "5",
-            "title": "JS Form",
-            "description" : "A Javascript test of DOM manipulation: creation of a child part and visualization of a nuclear family.",
-            "tag": ["JavaScript"],
-            "github": "https://github.com/eleo-jens/JS_exam",
-            "website": "https://eleo-jens.github.io/JS_exam/",
+            "id" : "6",
+            "title": "CV Website",
+            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
+            "tag": ["CSS/Html"],
+            "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
+            "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
-                    "src" : "./assets/img/epreuvejsfin.png",
-                    "alt" : "Picture of my JavaScript exam"
+                    "src" : "./assets/img/css_linkedin.png",
+                    "alt" : "Picture of my CV Website project"
                 }
             ]
-        } 
-
+        }
     ]
 }

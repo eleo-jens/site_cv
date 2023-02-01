@@ -25,11 +25,13 @@
         "all": "Tout",
         "galerie": {
             "h3" : ["SuITs You",
-            "Site CV",
             "WadFlix",
+            "Mon Portfolio",
+            "Formulaire",
             "Angular",
             "PixelArt",
-            "Formulaire JS"],
+            "Site CV"
+            ],
             "alt" : "Photo de mon projet "
         }
     },

@@ -14,22 +14,9 @@
                 }
             ]
         },
+        
         {
             "id" : "1",
-            "title": "Site CV",
-            "description" : "Projet de Site CV issue de la formation Linkeding Learning 'CSS Essential Training' dispensé par Christina Truong",
-            "tag": ["CSS/Html"],
-            "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
-            "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
-            "media": [
-                { 
-                    "src" : "./assets/img/css_linkedin.png",
-                    "alt" : "Photo de mon projet site CV"
-                }
-            ]
-        }, 
-        {
-            "id" : "2",
             "title": "Wadflix",
             "description" : "Une application web sur le thème du cinéma, codée pour un projet scolaire en PHP. Incluant les concepts suivants : MasterPage, AJAX, Session, Requêtes de base de données.",
             "tag": ["PHP", "SQL", "JavaScript"],
@@ -43,7 +30,35 @@
             ]
         },
         {
+            "id" : "2",
+            "title": "Mon Portfolio",
+            "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire qui m'a permis de présenter mes différents projets, mon parcours professionnel et mes compétences de développeuse web. Ce site est entièrement codé en trio HTML/CSS/JavaScript.",
+            "tag": ["JavaScript", "CSS/Html"],
+            "github": "https://github.com/eleo-jens/site_cv",
+            "website": "http://www.if3projets.net/wad22/eleonore/",
+            "media": [
+                { 
+                    "src" : "./assets/img/portfolio.png",
+                    "alt" : "Photo de mon site portfolio"
+                }
+            ]
+        }, 
+        {
             "id" : "3",
+            "title": "Formulaire JS",
+            "description" : "Une épreuve Javascript de manipulation du DOM: création d'une partie enfant et visualisation d'une famille nucléaire.",
+            "tag": ["JavaScript"],
+            "github": "https://github.com/eleo-jens/JS_exam",
+            "website": "https://eleo-jens.github.io/JS_exam/",
+            "media": [
+                { 
+                    "src" : "./assets/img/epreuvejsfin.png",
+                    "alt" : "Photo d'une épreuve JavaScript"
+                }
+            ]
+        }, 
+        {
+            "id" : "4",
             "title": "Introduction à Angular",
             "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
             "tag": ["Angular", "JavaScript"],
@@ -57,7 +72,7 @@
             ]
         },
         {
-            "id" : "4",
+            "id" : "5",
             "title": "PixelArt en JS",
             "description" : "Un pixel art simple codé en JavaScript pour apprendre à manipuler le DOM et les couleurs.",
             "tag": ["JavaScript"],
@@ -71,18 +86,18 @@
             ]
         },
         {
-            "id" : "5",
-            "title": "Formulaire JS",
-            "description" : "Une épreuve Javascript de manipulation du DOM: création d'une partie enfant et visualisation d'une famille nucléaire.",
-            "tag": ["JavaScript"],
-            "github": "https://github.com/eleo-jens/JS_exam",
-            "website": "https://eleo-jens.github.io/JS_exam/",
+            "id" : "6",
+            "title": "Site CV",
+            "description" : "Projet de Site CV issue de la formation Linkeding Learning 'CSS Essential Training' dispensé par Christina Truong",
+            "tag": ["CSS/Html"],
+            "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
+            "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",
             "media": [
                 { 
-                    "src" : "./assets/img/epreuvejsfin.png",
-                    "alt" : "Photo d'une épreuve JavaScript"
+                    "src" : "./assets/img/css_linkedin.png",
+                    "alt" : "Photo de mon projet site CV"
                 }
             ]
-        } 
+        }
     ]
 }

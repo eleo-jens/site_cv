@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@500&display=swap'); */
 
 @font-face {
     font-family: "Melburch";
-    src: url('../assets/fonts/Melburch/Melburch.otf');
+    src: url('../assets/fonts/Melburch/Melburch.otf?');
 }
 
 @font-face {
     font-family: "Melburch Outline";
-    src: url('../assets/fonts/Melburch/Melburch\ Outline.otf');
+    src: url('../assets/fonts/Melburch/Melburch\ Outline.otf?');
 }
-
 
 /* Global styles
 ------------------------------- */
@@ -22,8 +21,8 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -157,9 +156,9 @@ div.toggles {
     cursor: pointer;
 }
 
-img.language {
-    /* width: 80%; */
-}
+/* img.language {
+    width: 80%;
+} */
 
 .theme {
     margin-right: 10%;
@@ -275,9 +274,9 @@ header img[alt="logo"] {
     transition: color 2s ease-out;
 }
 
-/* .bulle:hover { */
-    /* background-color: #343434; */
-/* } */
+/* .bulle:hover { 
+     background-color: #343434; 
+ } */
 
 .bulle:hover i {
     /* color: white; */
