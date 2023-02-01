@@ -377,7 +377,7 @@ section#projects h3 {
     margin-right: 0%;
 }
 
-.project-item img.jsform {
+.project-item img.jsform, img.showasp {
     object-position: left top;
 }
 
