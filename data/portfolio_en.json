@@ -55,9 +55,23 @@
                     "alt" : "Picture of my JavaScript exam"
                 }
             ]
-        }, 
+        },
         {
             "id" : "4",
+            "title": "MVC ASP.Net Shows project",
+            "description" : "Scholar project in C# ASP.Net MVC about theater shows covering the following notions: CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor and ADO.",
+            "tag": ["C#", "ASP.Net", "SQL"],
+            "github": "https://github.com/eleo-jens/Demo-FullASP",
+            "website": "",
+            "media": [
+                { 
+                    "src" : "./assets/img/css_linkedin.png",
+                    "alt" : "Picture of my ASP.Net project"
+                }
+            ]
+        }, 
+        {
+            "id" : "5",
             "title": "Angular Introduction",
             "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
             "tag": ["Angular", "JavaScript"],
@@ -71,7 +85,7 @@
             ]
         },
         {
-            "id" : "5",
+            "id" : "6",
             "title": "PixelArt in JS",
             "description" : "A simple pixel art coded in JavaScript to learn how to manipulate the DOM and colors.",
             "tag": ["JavaScript"],
@@ -85,7 +99,7 @@
             ]
         },
         {
-            "id" : "6",
+            "id" : "7",
             "title": "CV Website",
             "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
             "tag": ["CSS/Html"],
