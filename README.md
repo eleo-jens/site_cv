@@ -1,1 +1,9 @@
-The website your are navigating right now is a school project that allowed me to display my different projets, my professional background and my web developer skills. This website is entirely coded with the web trio HTML/CSS/JavaScript. Including bilingual and theme toggles, generation of a timeline and creation of a filter project menu in vanilla JS and the integration of Highchart library.
+My portfolio webiste 
+
+This portfolio allows me to display my different projets, professional background and web developer skills. 
+This website is entirely programmed with the web trio HTML/CSS/JavaScript. 
+It includes the following vanilla JS features:
+- bilingual and theme toggles
+- a timeline
+- a filter project menu
+- the integration of Highchart library
