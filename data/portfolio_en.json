@@ -3,7 +3,7 @@
         {
             "id" : "0",
             "title": "Suits You",
-            "description" : "A hackthon project coded in 3 days in a group of 4 developers: an IT career orientation test.",
+            "description" : "An IT career orientation test programmed during an 3 days hackthon by a group of 4 developers.",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/suitsyou_hackathon",
             "website": "https://hackathon22.interface3.be/Su_ITs_You/",
@@ -17,7 +17,7 @@
         {
             "id" : "1",
             "title": "Wadflix",
-            "description" : "A movie theme web application coded for a PHP school project. Including the following concepts: MasterPage, AJAX, Session, Database requests: CRUD.",
+            "description" : "A movie theme web application programmed in PHP, JavaScript and MySQL. It includes the following concepts: MasterPage, AJAX, Session, Database requests: CRUD.",
             "tag": ["PHP", "SQL", "JavaScript"],
             "github": "https://github.com/eleo-jens/siteFilmDB",
             "website": "",
@@ -31,7 +31,7 @@
         {
             "id" : "2",
             "title": "My Portfolio",
-            "description" : "The website your are navigating right now is a school project that allowed me to display my different projets, my professional background and my web developer skills. This website is entirely coded with the web trio HTML/CSS/JavaScript. Including bilingual and theme toggles, generation of a timeline and creation of a filter project menu in vanilla JS and the integration of Highchart library.",
+            "description" : "The website your are navigating right now allows me to display my different projets, professional background and web developer skills. This website is entirely programmed with the web trio HTML/CSS/JavaScript. It includes the following vanilla JS features: bilingual and theme toggles, a timeline, a filter project menu and the integration of Highchart library.",
             "tag": ["JavaScript", "CSS/Html"],
             "github": "https://github.com/eleo-jens/site_cv",
             "website": "http://www.if3projets.net/wad22/eleonore/",
@@ -59,7 +59,7 @@
         {
             "id" : "4",
             "title": "MVC ASP.Net Shows project",
-            "description" : "Scholar project in C# ASP.Net MVC about theater shows covering the following notions: CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor and ADO.",
+            "description" : "A project in C# ASP.Net MVC about theater shows covering the following notions: CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor and ADO.",
             "tag": ["C#", "ASP.Net", "SQL"],
             "github": "https://github.com/eleo-jens/Demo-FullASP",
             "website": "",
@@ -73,7 +73,7 @@
         {
             "id" : "5",
             "title": "Angular Introduction",
-            "description" : "A demonstration and exercices portfolio coded with the Angular framework to learn this technology.",
+            "description" : "A demonstration and exercices portfolio programmed with the Angular framework.",
             "tag": ["Angular", "JavaScript"],
             "github": "https://github.com/eleo-jens/angular",
             "website": "",
@@ -86,8 +86,8 @@
         },
         {
             "id" : "6",
-            "title": "PixelArt in JS",
-            "description" : "A simple pixel art coded in JavaScript to learn how to manipulate the DOM and colors.",
+            "title": "Pixel Art in JS",
+            "description" : "A simple pixel art prgrammed in JavaScript to learn how to manipulate the DOM and colors.",
             "tag": ["JavaScript"],
             "github": "https://github.com/eleo-jens/pixelart_js",
             "website": "https://eleo-jens.github.io/pixelart_js/",
@@ -101,7 +101,7 @@
         {
             "id" : "7",
             "title": "CV Website",
-            "description" : "CV Project from the CSS Essential Training gave by Christina Truong from Linkedin Learning",
+            "description" : "CV Project from the CSS Essential Training from Linkedin Learning",
             "tag": ["CSS/Html"],
             "github": "https://github.com/eleo-jens/css_cv_project_linkedin_learning",
             "website": "https://eleo-jens.github.io/css_cv_project_linkedin_learning/",

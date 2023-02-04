@@ -8,17 +8,17 @@ Highcharts.chart('container', {
         align: 'left'
     },
     tooltip: {
-        useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value} %'
+        // useHTML: true,
+        // pointFormat: '<b>{point.name}:</b> {point.value} %'
     },
     plotOptions: {
         packedbubble: {
             minSize: '30%',
-            maxSize: '120%',
+            maxSize: '200%',
             zMin: 0,
             zMax: 600,
             layoutAlgorithm: {
-                splitSeries: true,
+                splitSeries: false,
                 gravitationalConstant: 0.02
             },
             dataLabels: {
@@ -41,35 +41,22 @@ Highcharts.chart('container', {
         name: 'Back End',
         data: [{
             name: 'PHP',
-            value: 70
+            value: 140
         }, {
             name: 'C#',
-            value: 80
+            value: 160
         },
         {
             name: 'ASP.Net MVC',
-            value: 70
+            value: 140
         },
         {
             name: 'ASP.Net API',
-            value: 60
+            value: 160
         },
-        {
-            name: 'Symfony',
-            value: 0
-        },
-        {
-            name: 'Node JS',
-            value: 0
-        }
-        ,
         {
             name: 'Python',
             value: 40
-        },
-        {
-            name: 'Ionic',
-            value: 0
         }]
     }, {
         name: 'Front End',
@@ -162,3 +149,18 @@ Highcharts.chart('container', {
         }]
     }
 });
+
+
+// {
+//     name: 'Symfony',
+//     value: 0
+// },
+// {
+//     name: 'Node JS',
+//     value: 0
+// }
+// ,
+// {
+//     name: 'Ionic',
+//     value: 0
+// }
