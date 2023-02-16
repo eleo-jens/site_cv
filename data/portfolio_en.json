@@ -93,7 +93,7 @@
             "website": "",
             "media": [
                 { 
-                    "src" : "./assets/img/suitsyou_big.png",
+                    "src" : "./assets/img/thumbnail-2.jpg",
                     "alt" : "Picture of my hackathon projects"
                 }
             ]
