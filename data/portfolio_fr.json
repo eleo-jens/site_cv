@@ -2,19 +2,18 @@
     "projects": [
         {
             "id" : "0",
-            "title": "Suits You",
-            "description" : "Un projet de groupe développée lors d'un hackthon de 3 jours par 4 développeuses: un test d'orientation de carrières IT codé en JavaScript",
-            "tag": ["JavaScript", "CSS/Html"],
-            "github": "https://github.com/eleo-jens/suitsyou_hackathon",
-            "website": "https://hackathon22.interface3.be/Su_ITs_You/",
+            "title": "Adopte un.e Developpeuse.eur",
+            "description" : "Ce projet permet de mettre en relation des développeurs/développeuses et des employeurs. Ces derniers peuvent rechercher parmi les développeurs ceux qui correspondent à leurs besoins. Chaque membre du site peut déposer son profil et définir son tarif. Lorsqu’un employeur trouve la perle rare, il peut l’engager pour sa mission en se basant sur les tarifs définis par le développeur.",
+            "tag": ["C#", "ASP.Net MVC", "SQL"],
+            "github": "https://github.com/eleo-jens/ASP_MVC_Adopte_Dev",
+            "website": "",
             "media": [
                 { 
-                    "src" : "./assets/img/suitsyou_big.png",
-                    "alt" : "Photo de mon projet hackathon"
+                    "src" : "./assets/img/adopte_dev.png",
+                    "alt" : "Photo de mon projet Adopte un dev"
                 }
             ]
         },
-        
         {
             "id" : "1",
             "title": "Wadflix",
@@ -31,6 +30,20 @@
         },
         {
             "id" : "2",
+            "title": "Suits You",
+            "description" : "Un projet de groupe développée lors d'un hackthon de 3 jours par 4 développeuses: un test d'orientation de carrières IT codé en JavaScript",
+            "tag": ["JavaScript", "CSS/Html"],
+            "github": "https://github.com/eleo-jens/suitsyou_hackathon",
+            "website": "https://hackathon22.interface3.be/Su_ITs_You/",
+            "media": [
+                { 
+                    "src" : "./assets/img/suitsyou_big.png",
+                    "alt" : "Photo de mon projet hackathon"
+                }
+            ]
+        },
+        {
+            "id" : "3",
             "title": "Mon Portfolio",
             "description" : "Le site sur lequel vous naviguez actuellement est un projet scolaire qui m'a permis de présenter mes différents projets, mon parcours professionnel et mes compétences de développeur web. Ce site est entièrement codé avec le trio web HTML/CSS/JavaScript. Incluant des modes bilingues et light/dark, la génération d'une ligne de temps et la création de filtre de projet en vanilla JS ainsi que l'intégration de la bibliothèque Highchart.",
             "tag": ["JavaScript", "CSS/Html"],
@@ -44,7 +57,7 @@
             ]
         }, 
         {
-            "id" : "3",
+            "id" : "4",
             "title": "Formulaire JS",
             "description" : "Une épreuve Javascript de manipulation du DOM: création d'une partie enfant et visualisation d'une famille nucléaire.",
             "tag": ["JavaScript"],
@@ -58,10 +71,10 @@
             ]
         },
         {
-            "id" : "4",
+            "id" : "5",
             "title": "MVC ASP.Net Project de spectacles",
             "description" : "Projet scolaire en C# ASP.Net MVC sur les spectacles de théâtre couvrant les notions suivantes : CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor et ADO.",
-            "tag": ["C#", "ASP.Net", "SQL"],
+            "tag": ["C#", "ASP.Net MVC", "SQL"],
             "github": "https://github.com/eleo-jens/Demo-FullASP",
             "website": "",
             "media": [
@@ -72,7 +85,7 @@
             ]
         },  
         {
-            "id" : "5",
+            "id" : "6",
             "title": "Introduction Angular",
             "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
             "tag": ["Angular", "JavaScript"],
@@ -86,7 +99,7 @@
             ]
         },
         {
-            "id" : "6",
+            "id" : "7",
             "title": "PixelArt en JS",
             "description" : "Un pixel art simple codé en JavaScript pour apprendre à manipuler le DOM et les couleurs.",
             "tag": ["JavaScript"],
@@ -100,7 +113,7 @@
             ]
         },
         {
-            "id" : "7",
+            "id" : "8",
             "title": "Site CV",
             "description" : "Projet de Site CV issue de la formation Linkeding Learning 'CSS Essential Training' dispensé par Christina Truong",
             "tag": ["CSS/Html"],
