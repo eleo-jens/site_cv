@@ -1,58 +1,67 @@
-svg#filter {
-  position: absolute;
+body.dark {
+  background-color: #141517;
+  color: #f1f1f1;
 }
 
-body.light::before, body.light::after {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  --grad: radial-gradient(
-    at 25%,
-    red,
-    rgba(255, 0, 0, 0.2) 50%,
-    transparent 70%
-  );
-  --mask: var(--grad), var(--grad);
-  -webkit-mask: var(--mask);
-  -webkit-mask-composite: source-in;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-  -webkit-mask-composite: source-in, xor;
-          mask-composite: intersect;
-  mix-blend-mode: color;
-  content: "";
-}
-body.light::before {
-  background: #000;
-  filter: url(#f);
-}
-body.light::after {
-  background: linear-gradient(90deg, purple, navy 20%, aqua);
+body.dark .marquee {
+  background-color: #0f06ae;
+  color:white;
 }
 
-body.dark::before, body.dark::after {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  --grad:
-  	radial-gradient(at 95%,
-  			red, rgba(255, 0, 0, 0.3) 100%, transparent 80%);
-  --mask: var(--grad), var(--grad);
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-  mix-blend-mode: color;
-  content: "";
+body.dark section#hero {
+  background-image: url("/assets/img/background/Abstract_Gradient_Shape_1.jpg");
+  background-position-y: 70%;
+  color: black;
 }
-body.dark::before {
-  background: black;
-  filter: url(#f);
+
+body.dark img.img-bg.bg-light {
+  display: none; 
 }
-body.dark::after {
-  background: linear-gradient(-45deg, purple, navy 90%);
+
+body.dark .bg-dark {
+  display: block; 
+  left: -60%;
+  top: 120%;
+  z-index: -100;
+  width: 80%;
+}
+
+body.dark section#projects h3 {
+  color: white;
+}
+
+body.dark section#background div.item-description {
+  color: white;
+}
+
+body.dark #left, #right {
+  color: white;
+}
+
+body.dark .box-timeline:after{
+  border: 1px solid white;
+}
+
+body.dark section#contact {
+  background-image: url("/assets/img/background/Abstract_Gradient_Shape_1.jpg");
+  background-position-y: -20%;
+  background-position-x: 20%;
+}
+
+body.dark section#contact .button {
+  background-color: black;
+  color:white;
+  border: black;
+}
+
+body.dark section#contact .button:hover {
+  background-color: #fde6d8;
+  color:black;
+  border: 1px solid black;
 }
 
 body.dark header a, body.dark header nav {
-  background-color: #202020;
+  background-color: #141517;
   color: #f1f1f1;
 }
 
@@ -79,4 +88,23 @@ body.dark .bulle:hover i {
 
 body.dark .line {
   background: #f1f1f1;
-}/*# sourceMappingURL=background.css.map */
+}
+
+body.dark .modal-container.active .modal {
+  color: white;
+  background-color: black;
+}
+
+body.dark .modal-container.active .modal .button {
+  color: black;
+  background-color: white;
+  border: white; 
+}
+
+body.dark .modal-container.active .modal .button:hover {
+  color: white;
+  background-color: #e707c6;
+  border: #e707c6; 
+}
+
+/*# sourceMappingURL=background.css.map */
