@@ -196,7 +196,7 @@ header img[alt="logo"] {
     background-position-x: center;
     background-position-y: 12%; */
 
-    background-image: url("/assets/img/background/Abstract_Gradient_Shape_10.jpg");
+    background-image: url("../assets/img/background/Abstract_Gradient_Shape_10.jpg");
     background-position-x:  50%;
     background-position-y: 130%;
     background-size: 70%;
@@ -711,7 +711,7 @@ section#contact {
     background-position-x: 100%;
     background-position-y: 8%; */
 
-    background-image: url("/assets/img/background/Abstract_Gradient_Shape_7.jpg");
+    background-image: url("../assets/img/background/Abstract_Gradient_Shape_7.jpg");
     background-position-x: 110%;
     background-position-y: 40%;
     background-size: 80%;
