@@ -1,18 +1,53 @@
+// regarder ceci: https://www.highcharts.com/docs/chart-design-and-style/themes
+
 const theme_switch = document.querySelector(".theme i");
 
 theme_switch.addEventListener("click", function () {
 
     if(theme_switch.classList.contains("fa-sun")){
-        genchart('#141517'); 
-        color = "#FFF";
+        genchart('#141517', '#FFF'); 
     }
     else if(theme_switch.classList.contains("fa-moon")) {
-        genchart('#FFF'); 
-        color = "#000000";
+        genchart('#FFF', "#000000"); 
     }
 });
 
-const genchart = function (bckColor,color){
+const genchart = function (bckColor, color){
+    Highcharts.theme = {
+        colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572',
+                 '#FF9655', '#FFF263', '#6AF9C4'],
+        chart: {
+            backgroundColor: {
+                linearGradient: [0, 0, 500, 500],
+                stops: [
+                    [0, 'rgb(255, 255, 255)'],
+                    [1, 'rgb(240, 240, 255)']
+                ]
+            },
+        },
+        title: {
+            style: {
+                color: '#000',
+                font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+            }
+        },
+        subtitle: {
+            style: {
+                color: '#666666',
+                font: 'bold 12px "Trebuchet MS", Verdana, sans-serif'
+            }
+        },
+        legend: {
+            itemStyle: {
+                font: '9pt Trebuchet MS, Verdana, sans-serif',
+                color: 'black'
+            },
+            itemHoverStyle:{
+                color: 'gray'
+            }
+        }
+    };
+
     Highcharts.chart('container', {
         chart: {
             type: 'packedbubble',
@@ -179,8 +214,18 @@ const genchart = function (bckColor,color){
                     }
                 }
             }]
+        },
+        legend: {
+            itemStyle: {
+                font: '9pt Trebuchet MS, Verdana, sans-serif',
+                color: color,
+            },
+            itemHoverStyle:{
+                color: 'grey'
+            }
         }
     });
+    Highcharts.setOptions(Highcharts.theme);
 }
 
-genchart('#141517');
+genchart('#141517', '#FFF');
