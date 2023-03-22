@@ -55,9 +55,23 @@
                     "alt" : "Picture of my portfolio"
                 }
             ]
-        }, 
+        },
         {
             "id" : "4",
+            "title": "Find a movie",
+            "description" : "A Node.js website 'Find a movie' calling our own Rest api about the top 1000 movies. Time of developement: 1,5 days.",
+            "tag": ["JavaScript", "CSS/Html", "Node.js"],
+            "github": "https://github.com/eleo-jens/NodeJSMovie",
+            "website": "",
+            "media": [
+                { 
+                    "src" : "./assets/img/findamovie2.png",
+                    "alt" : "Picture of my movie website"
+                }
+            ]
+        },  
+        {
+            "id" : "5",
             "title": "JS Form",
             "description" : "A Javascript test of DOM manipulation: creation of a child part and visualization of a nuclear family.",
             "tag": ["JavaScript"],
@@ -71,7 +85,7 @@
             ]
         },
         {
-            "id" : "5",
+            "id" : "6",
             "title": "MVC ASP.Net Shows project",
             "description" : "A project in C# ASP.Net MVC about theater shows covering the following notions: CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor and ADO.",
             "tag": ["C#", "ASP.Net MVC", "SQL"],
@@ -85,7 +99,7 @@
             ]
         }, 
         {
-            "id" : "6",
+            "id" : "7",
             "title": "Angular Introduction",
             "description" : "A demonstration and exercices portfolio programmed with the Angular framework.",
             "tag": ["Angular", "JavaScript"],
@@ -99,7 +113,7 @@
             ]
         },
         {
-            "id" : "7",
+            "id" : "8",
             "title": "Pixel Art in JS",
             "description" : "A simple pixel art prgrammed in JavaScript to learn how to manipulate the DOM and colors.",
             "tag": ["JavaScript"],
@@ -113,7 +127,7 @@
             ]
         },
         {
-            "id" : "8",
+            "id" : "9",
             "title": "CV Website",
             "description" : "CV Project from the CSS Essential Training from Linkedin Learning",
             "tag": ["CSS/Html"],

@@ -22,13 +22,14 @@
     },
     "projects": {
         "h2": "Projects",
-        "all": "All (9)",
+        "all": "All (10)",
         "galerie": {
             "h3" : [
             "Find a Dev",
             "WadFlix",
             "SuITs You",
             "My Portfolio",
+            "Movies",
             "Form JS",
             "ASP.Net",
             "Angular",

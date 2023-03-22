@@ -58,6 +58,20 @@
         }, 
         {
             "id" : "4",
+            "title": "Find a movie",
+            "description" : "Une web app en Node.js appelant sa propre Rest Api de films. Temps de développement: 1,5 jours.",
+            "tag": ["JavaScript", "CSS/Html", "Node.js"],
+            "github": "https://github.com/eleo-jens/NodeJSMovie",
+            "website": "",
+            "media": [
+                { 
+                    "src" : "./assets/img/findamovie2.png",
+                    "alt" : "Photo de mon site de films"
+                }
+            ]
+        },  
+        {
+            "id" : "5",
             "title": "Formulaire JS",
             "description" : "Une épreuve Javascript de manipulation du DOM: création d'une partie enfant et visualisation d'une famille nucléaire.",
             "tag": ["JavaScript"],
@@ -71,7 +85,7 @@
             ]
         },
         {
-            "id" : "5",
+            "id" : "6",
             "title": "MVC ASP.Net Project de spectacles",
             "description" : "Projet scolaire en C# ASP.Net MVC sur les spectacles de théâtre couvrant les notions suivantes : CRUD, DAL, BLL, Common, Repositories/Services, MVC, Razor et ADO.",
             "tag": ["C#", "ASP.Net MVC", "SQL"],
@@ -85,7 +99,7 @@
             ]
         },  
         {
-            "id" : "6",
+            "id" : "7",
             "title": "Introduction Angular",
             "description" : "Un portfolio de démonstrations et d'exercices codés avec le framework Angular pour apprendre cette technologie.",
             "tag": ["Angular", "JavaScript"],
@@ -99,7 +113,7 @@
             ]
         },
         {
-            "id" : "7",
+            "id" : "8",
             "title": "PixelArt en JS",
             "description" : "Un pixel art simple codé en JavaScript pour apprendre à manipuler le DOM et les couleurs.",
             "tag": ["JavaScript"],
@@ -113,7 +127,7 @@
             ]
         },
         {
-            "id" : "8",
+            "id" : "9",
             "title": "Site CV",
             "description" : "Projet de Site CV issue de la formation Linkeding Learning 'CSS Essential Training' dispensé par Christina Truong",
             "tag": ["CSS/Html"],
