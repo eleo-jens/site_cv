@@ -25,11 +25,11 @@
         "all": "Tout (10)",
         "galerie": {
             "h3" : [
-            "Adopte un Dev",
+            "Adopte Dev",
             "WadFlix",
             "SuITs You",
             "Portfolio",
-            "Movies",
+            "Find a movie",
             "Formulaire",
             "ASP.Net",
             "Angular",
